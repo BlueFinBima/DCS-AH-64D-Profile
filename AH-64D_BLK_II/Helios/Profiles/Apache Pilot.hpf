@@ -1,0 +1,2819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HeliosProfile>
+  <Version>3</Version>
+  <Monitors>
+    <Monitor>
+      <Location>0,0</Location>
+      <Size>1920,1080</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children>
+        <Control TypeIdentifier="Helios.Panel" Name="Background" SnapTarget="True" Locked="False">
+          <Location>0,0</Location>
+          <Size>1920,1080</Size>
+          <Hidden>False</Hidden>
+          <Background>
+            <Image>AH-64D_blk_II\BlueFinBima\1080pBackgroundPilot.png</Image>
+            <ImageAlignment>Tiled</ImageAlignment>
+          </Background>
+          <Interaction>
+            <AllowInteractionFull>False</AllowInteractionFull>
+            <AllowInteractionNone>True</AllowInteractionNone>
+            <AllowInteractionLegacy>False</AllowInteractionLegacy>
+          </Interaction>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.MFD.PLTRIGHT" Name="MFD Right (Pilot)" SnapTarget="True" Locked="False">
+          <Location>1389,250</Location>
+          <Size>531,500</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.MFD.PLTLEFT" Name="MFD Left (Pilot)" SnapTarget="True" Locked="False">
+          <Location>0,250</Location>
+          <Size>531,500</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.KU.PILOT" Name="Keyboard Unit (Pilot)" SnapTarget="True" Locked="False">
+          <Location>531,435</Location>
+          <Size>500,390</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.CMWS" Name="CMWS Display" SnapTarget="True" Locked="False">
+          <Location>1528,0</Location>
+          <Size>392,249</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light" SnapTarget="True" Locked="False">
+          <Location>1870,1030</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Buttons/tactile-light-square.png</Image>
+          <PushedImage>{Helios}/Images/Buttons/tactile-light-square-in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.EUFD.PILOT" Name="Up Front Display (Pilot)" SnapTarget="True" Locked="False">
+          <Location>600,0</Location>
+          <Size>732,249</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="Master Warning" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+          <OnTextColor>#F1CE7B14</OnTextColor>
+          <Location>940,263</Location>
+          <Size>75,75</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Indicators/indicator.png</Image>
+          <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+          <Text>
+            <Color>#FF1C1C1C</Color>
+            <Font>
+              <FontFamily>MS 33558</FontFamily>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Normal</FontWeight>
+              <FontSize>14</FontSize>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <VerticalAlignment>Center</VerticalAlignment>
+              <Padding>
+                <Left>0</Left>
+                <Top>0</Top>
+                <Right>0</Right>
+                <Bottom>0</Bottom>
+              </Padding>
+            </Font>
+            <Text>MSTR WARN</Text>
+          </Text>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="Master Caution" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+          <OnTextColor>#E035B329</OnTextColor>
+          <Location>940,347</Location>
+          <Size>75,75</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Indicators/indicator.png</Image>
+          <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+          <Text>
+            <Color>#2035B329</Color>
+            <Font>
+              <FontFamily>MS 33558</FontFamily>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Normal</FontWeight>
+              <FontSize>14</FontSize>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <VerticalAlignment>Center</VerticalAlignment>
+              <Padding>
+                <Left>0</Left>
+                <Top>0</Top>
+                <Right>0</Right>
+                <Bottom>0</Bottom>
+              </Padding>
+            </Font>
+            <Text>MSTR CAUT</Text>
+          </Text>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="Ground Override" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+          <OnTextColor>#FF40B329</OnTextColor>
+          <Location>690,294</Location>
+          <Size>75,75</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Indicators/indicator.png</Image>
+          <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+          <Text>
+            <Color>#2040B329</Color>
+            <Font>
+              <FontFamily>MS 33558</FontFamily>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Normal</FontWeight>
+              <FontSize>14</FontSize>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <VerticalAlignment>Center</VerticalAlignment>
+              <Padding>
+                <Left>0</Left>
+                <Top>0</Top>
+                <Right>0</Right>
+                <Bottom>0</Bottom>
+              </Padding>
+            </Font>
+            <Text>ON</Text>
+          </Text>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Pilot Master Arm Switch" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+          <OnTextColor>#F0F67A00</OnTextColor>
+          <Location>600,294</Location>
+          <Size>75,75</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Indicators/indicator.png</Image>
+          <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+          <Text>
+            <Color>#20F67900</Color>
+            <Font>
+              <FontFamily>Franklin Gothic</FontFamily>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Normal</FontWeight>
+              <FontSize>18</FontSize>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <VerticalAlignment>Top</VerticalAlignment>
+              <Padding>
+                <Left>0</Left>
+                <Top>0.2</Top>
+                <Right>0</Right>
+                <Bottom>0</Bottom>
+              </Padding>
+            </Font>
+            <Text>ARM</Text>
+          </Text>
+          <AdditionalText>
+            <Font>
+              <FontFamily>Franklin Gothic</FontFamily>
+              <FontStyle>Normal</FontStyle>
+              <FontWeight>Normal</FontWeight>
+              <FontSize>18</FontSize>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <VerticalAlignment>Bottom</VerticalAlignment>
+              <Padding>
+                <Left>0</Left>
+                <Top>0</Top>
+                <Right>0</Right>
+                <Bottom>0.2</Bottom>
+              </Padding>
+            </Font>
+            <Text>SAFE</Text>
+            <OnTextColor>#F033AE00</OnTextColor>
+            <OffTextColor>#2033AE00</OffTextColor>
+          </AdditionalText>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Panel" Name="Fire Panel" SnapTarget="True" Locked="False">
+          <Location>0,0</Location>
+          <Size>504,250</Size>
+          <Hidden>False</Hidden>
+          <Background />
+          <Interaction>
+            <AllowInteractionFull>False</AllowInteractionFull>
+            <AllowInteractionNone>True</AllowInteractionNone>
+            <AllowInteractionLegacy>False</AllowInteractionLegacy>
+          </Interaction>
+          <Children>
+            <Control TypeIdentifier="Helios.Panel" Name="Fire Panel Image" SnapTarget="True" Locked="False">
+              <Location>0,9</Location>
+              <Size>504,241</Size>
+              <Hidden>False</Hidden>
+              <Background>
+                <Image>AH-64D_blk_II\BlueFinBima\Fire_Panel\Fire_Panel.png</Image>
+                <ImageAlignment>Stretched</ImageAlignment>
+              </Background>
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>False</AllowInteractionNone>
+                <AllowInteractionLegacy>True</AllowInteractionLegacy>
+              </Interaction>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Test Toggle Switch" SnapTarget="True" Locked="False">
+              <Location>201,163</Location>
+              <Size>50,100</Size>
+              <Rotation>CCW</Rotation>
+              <Hidden>False</Hidden>
+              <SwitchType>MomOnMom</SwitchType>
+              <Orientation>Vertical</Orientation>
+              <ClickType>Swipe</ClickType>
+              <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
+              <PositionTwoImage>{Helios}/Images/Toggles/orange-round-norm.png</PositionTwoImage>
+              <PositionThreeImage>{Helios}/Images/Toggles/orange-round-down.png</PositionThreeImage>
+              <DefaultPosition>Two</DefaultPosition>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Primary Pushbutton" SnapTarget="True" Locked="False">
+              <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+              <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+              <OnTextColor>#F033AE00</OnTextColor>
+              <Location>105,156</Location>
+              <Size>57,55</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+              <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+              <Text>
+                <Color>#2033AE00</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>15.1233707865169</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>DISCH</Text>
+              </Text>
+              <AdditionalText>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>20.089885752809</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Bottom</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0.2</Bottom>
+                  </Padding>
+                </Font>
+                <Text />
+                <OnTextColor>#F033AE00</OnTextColor>
+                <OffTextColor>#2034AE00</OffTextColor>
+              </AdditionalText>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Reserve Pushbutton" SnapTarget="True" Locked="False">
+              <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+              <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+              <OnTextColor>#F033AE00</OnTextColor>
+              <Location>337,156</Location>
+              <Size>57,55</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+              <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+              <Text>
+                <Color>#2033AE00</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>15.1233707865169</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>DISCH</Text>
+              </Text>
+              <AdditionalText>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>20.089885752809</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Bottom</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0.2</Bottom>
+                  </Padding>
+                </Font>
+                <Text />
+                <OnTextColor>#F033AE00</OnTextColor>
+                <OffTextColor>#2034AE00</OffTextColor>
+              </AdditionalText>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.GuardedPushButton" Name="Eng 1 Button" SnapTarget="True" Locked="False">
+              <Location>71,0</Location>
+              <Size>87,127</Size>
+              <Hidden>False</Hidden>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Protected Push Button" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>14,59</Location>
+                  <Size>57,56</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>RDY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardCover" Name="Guard Cover" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>87,127</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Open_4.png</Image>
+                    <ActiveRegion>0,0,87,52</ActiveRegion>
+                  </GuardUp>
+                  <GuardDown>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Closed_4.png</Image>
+                    <ActiveRegion>0,52,87,127</ActiveRegion>
+                  </GuardDown>
+                  <ProtectedDevice>
+                    <ActiveRegion>14,59,57,56</ActiveRegion>
+                  </ProtectedDevice>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Base.GuardedPushButton" Name="APU Button" SnapTarget="True" Locked="False">
+              <Location>205,0</Location>
+              <Size>87,127</Size>
+              <Hidden>False</Hidden>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Protected Push Button" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>14,59</Location>
+                  <Size>57,56</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>RDY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardCover" Name="Guard Cover" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>87,127</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Open_4.png</Image>
+                    <ActiveRegion>0,0,87,52</ActiveRegion>
+                  </GuardUp>
+                  <GuardDown>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Closed_4.png</Image>
+                    <ActiveRegion>0,52,87,127</ActiveRegion>
+                  </GuardDown>
+                  <ProtectedDevice>
+                    <ActiveRegion>14,59,57,56</ActiveRegion>
+                  </ProtectedDevice>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Base.GuardedPushButton" Name="Eng 2 Button" SnapTarget="True" Locked="False">
+              <Location>340,0</Location>
+              <Size>87,127</Size>
+              <Hidden>False</Hidden>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Protected Push Button" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>14,59</Location>
+                  <Size>57,56</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>11.3425280898876</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>RDY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardCover" Name="Guard Cover" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>87,127</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Open_4.png</Image>
+                    <ActiveRegion>0,0,87,52</ActiveRegion>
+                  </GuardUp>
+                  <GuardDown>
+                    <Image>{helios}/Images/AH-64D/Fire/Extinguisher_Buttons_Closed_4.png</Image>
+                    <ActiveRegion>0,52,87,127</ActiveRegion>
+                  </GuardDown>
+                  <ProtectedDevice>
+                    <ActiveRegion>14,59,57,56</ActiveRegion>
+                  </ProtectedDevice>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+          </Children>
+        </Control>
+      </Children>
+    </Monitor>
+  </Monitors>
+  <Interfaces>
+    <Interface TypeIdentifier="Helios.Base.ProfileInterface" Name="Profile" />
+    <Interface TypeIdentifier="Helios.Base.Keyboard" Name="Keyboard">
+      <KeyDelay>30</KeyDelay>
+    </Interface>
+    <Interface TypeIdentifier="HeliosProcessControl.ProcessControlInterface" Name="Process Control">
+      <Configuration xmlns="http://Helios.local/HeliosProcessControl/Interfaces/ProcessControl/Configuration" />
+    </Interface>
+    <Interface TypeIdentifier="Helios.AH64D" Name="DCS AH-64D Apache" />
+    <Interface TypeIdentifier="Patching.DCS.MonitorSetup" Name="DCS Monitor Setup" />
+    <Interface TypeIdentifier="Patching.DCS.AdditionalViewports" Name="DCS Additional Viewports" />
+  </Interfaces>
+  <Bindings>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
+      <StaticValue>"C:\Program Files (x86)\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\Apache.iris"</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Stopped" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
+      <StaticValue>"Iris-Client.exe"</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Right (Pilot)_Button T1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Right (Pilot)_Button T2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Right (Pilot)_Button T3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Right (Pilot)_Button T4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Right (Pilot)_Button T5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button T6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Right (Pilot)_Button T6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button Asterisk.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Right (Pilot)_Button Asterisk.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Right (Pilot)_Button R1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Right (Pilot)_Button R2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Right (Pilot)_Button R3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Right (Pilot)_Button R4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Right (Pilot)_Button R5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button R6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Right (Pilot)_Button R6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button VID.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Right (Pilot)_Button VID.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button COM.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Right (Pilot)_Button COM.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Right (Pilot)_Button L1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Right (Pilot)_Button L2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Right (Pilot)_Button L3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Right (Pilot)_Button L4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Right (Pilot)_Button L5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button L6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Right (Pilot)_Button L6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button FCR.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Right (Pilot)_Button FCR.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button WPN.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Right (Pilot)_Button WPN.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button TSD.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Right (Pilot)_Button TSD.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B1/M(Menu).changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Right (Pilot)_Button B1/M(Menu).set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Right (Pilot)_Button B2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Right (Pilot)_Button B3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Right (Pilot)_Button B4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Right (Pilot)_Button B5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button B6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Right (Pilot)_Button B6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Button A/C.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Right (Pilot)_Button A/C.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Mode Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Display Mode;Helios.Base.RotarySwitch;MFD Right (Pilot)_Display Mode" Name="MFD Right (Pilot)_Display Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Brightness Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Brightness Control;Helios.Base.Potentiometer;MFD Right (Pilot)_Brightness Control" Name="MFD Right (Pilot)_Brightness Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).Video Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Video Control;Helios.Base.Potentiometer;MFD Right (Pilot)_Video Control" Name="MFD Right (Pilot)_Video Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Left (Pilot)_Button T1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Left (Pilot)_Button T2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Left (Pilot)_Button T3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Left (Pilot)_Button T4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Left (Pilot)_Button T5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button T6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Left (Pilot)_Button T6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button Asterisk.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Left (Pilot)_Button Asterisk.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Left (Pilot)_Button R1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Left (Pilot)_Button R2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Left (Pilot)_Button R3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Left (Pilot)_Button R4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Left (Pilot)_Button R5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button R6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Left (Pilot)_Button R6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button VID.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Left (Pilot)_Button VID.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button COM.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Left (Pilot)_Button COM.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L1.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Left (Pilot)_Button L1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Left (Pilot)_Button L2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Left (Pilot)_Button L3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Left (Pilot)_Button L4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Left (Pilot)_Button L5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button L6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Left (Pilot)_Button L6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button FCR.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Left (Pilot)_Button FCR.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button WPN.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Left (Pilot)_Button WPN.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button TSD.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Left (Pilot)_Button TSD.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B1/M(Menu).changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Left (Pilot)_Button B1/M(Menu).set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B2.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Left (Pilot)_Button B2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B3.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Left (Pilot)_Button B3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B4.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Left (Pilot)_Button B4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B5.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Left (Pilot)_Button B5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button B6.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Left (Pilot)_Button B6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Button A/C.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Left (Pilot)_Button A/C.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Mode Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Display Mode;Helios.Base.RotarySwitch;MFD Left (Pilot)_Display Mode" Name="MFD Left (Pilot)_Display Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Brightness Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Brightness Control;Helios.Base.Potentiometer;MFD Left (Pilot)_Brightness Control" Name="MFD Left (Pilot)_Brightness Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).Video Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Video Control;Helios.Base.Potentiometer;MFD Left (Pilot)_Video Control" Name="MFD Left (Pilot)_Video Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key A.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key A;Helios.Base.PushButton;Key A" Name="Keyboard Unit (Pilot)_Key A.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key B.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key B;Helios.Base.PushButton;Key B" Name="Keyboard Unit (Pilot)_Key B.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key C.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key C;Helios.Base.PushButton;Key C" Name="Keyboard Unit (Pilot)_Key C.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key D.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key D;Helios.Base.PushButton;Key D" Name="Keyboard Unit (Pilot)_Key D.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key E.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key E;Helios.Base.PushButton;Key E" Name="Keyboard Unit (Pilot)_Key E.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key F.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key F;Helios.Base.PushButton;Key F" Name="Keyboard Unit (Pilot)_Key F.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 1.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 1;Helios.Base.PushButton;Key 1" Name="Keyboard Unit (Pilot)_Key 1.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 2.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 2;Helios.Base.PushButton;Key 2" Name="Keyboard Unit (Pilot)_Key 2.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 3.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 3;Helios.Base.PushButton;Key 3" Name="Keyboard Unit (Pilot)_Key 3.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key G.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key G;Helios.Base.PushButton;Key G" Name="Keyboard Unit (Pilot)_Key G.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key H.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key H;Helios.Base.PushButton;Key H" Name="Keyboard Unit (Pilot)_Key H.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key I.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key I;Helios.Base.PushButton;Key I" Name="Keyboard Unit (Pilot)_Key I.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key J.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key J;Helios.Base.PushButton;Key J" Name="Keyboard Unit (Pilot)_Key J.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key K.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key K;Helios.Base.PushButton;Key K" Name="Keyboard Unit (Pilot)_Key K.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key L.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key L;Helios.Base.PushButton;Key L" Name="Keyboard Unit (Pilot)_Key L.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 4.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 4;Helios.Base.PushButton;Key 4" Name="Keyboard Unit (Pilot)_Key 4.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 5.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 5;Helios.Base.PushButton;Key 5" Name="Keyboard Unit (Pilot)_Key 5.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 6.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 6;Helios.Base.PushButton;Key 6" Name="Keyboard Unit (Pilot)_Key 6.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key M.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key M;Helios.Base.PushButton;Key M" Name="Keyboard Unit (Pilot)_Key M.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key N.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key N;Helios.Base.PushButton;Key N" Name="Keyboard Unit (Pilot)_Key N.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key O.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key O;Helios.Base.PushButton;Key O" Name="Keyboard Unit (Pilot)_Key O.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key P.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key P;Helios.Base.PushButton;Key P" Name="Keyboard Unit (Pilot)_Key P.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key Q.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key Q;Helios.Base.PushButton;Key Q" Name="Keyboard Unit (Pilot)_Key Q.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key R.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key R;Helios.Base.PushButton;Key R" Name="Keyboard Unit (Pilot)_Key R.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 7.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 7;Helios.Base.PushButton;Key 7" Name="Keyboard Unit (Pilot)_Key 7.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 8.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 8;Helios.Base.PushButton;Key 8" Name="Keyboard Unit (Pilot)_Key 8.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 9.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 9;Helios.Base.PushButton;Key 9" Name="Keyboard Unit (Pilot)_Key 9.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key S.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key S;Helios.Base.PushButton;Key S" Name="Keyboard Unit (Pilot)_Key S.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key T.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key T;Helios.Base.PushButton;Key T" Name="Keyboard Unit (Pilot)_Key T.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key U.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key U;Helios.Base.PushButton;Key U" Name="Keyboard Unit (Pilot)_Key U.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key V.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key V;Helios.Base.PushButton;Key V" Name="Keyboard Unit (Pilot)_Key V.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key W.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key W;Helios.Base.PushButton;Key W" Name="Keyboard Unit (Pilot)_Key W.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key X.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key X;Helios.Base.PushButton;Key X" Name="Keyboard Unit (Pilot)_Key X.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key Decimal.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key Decimal;Helios.Base.PushButton;Key Decimal" Name="Keyboard Unit (Pilot)_Key Decimal.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key 0.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key 0;Helios.Base.PushButton;Key 0" Name="Keyboard Unit (Pilot)_Key 0.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key +/-.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key +/-;Helios.Base.PushButton;Key +/-" Name="Keyboard Unit (Pilot)_Key +/-.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key Y.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key Y;Helios.Base.PushButton;Key Y" Name="Keyboard Unit (Pilot)_Key Y.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key Z.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key Z;Helios.Base.PushButton;Key Z" Name="Keyboard Unit (Pilot)_Key Z.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key /.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key /;Helios.Base.PushButton;Key /" Name="Keyboard Unit (Pilot)_Key /.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key BKS.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key BKS;Helios.Base.PushButton;Key BKS" Name="Keyboard Unit (Pilot)_Key BKS.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key SPC.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key SPC;Helios.Base.PushButton;Key SPC" Name="Keyboard Unit (Pilot)_Key SPC.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key *.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key *;Helios.Base.PushButton;Key *" Name="Keyboard Unit (Pilot)_Key *.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key DIV.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key DIV;Helios.Base.PushButton;Key DIV" Name="Keyboard Unit (Pilot)_Key DIV.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key +.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key +;Helios.Base.PushButton;Key +" Name="Keyboard Unit (Pilot)_Key +.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key -.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key -;Helios.Base.PushButton;Key -" Name="Keyboard Unit (Pilot)_Key -.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key CLR.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key CLR;Helios.Base.PushButton;Key CLR" Name="Keyboard Unit (Pilot)_Key CLR.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key &lt;.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key &lt;;Helios.Base.PushButton;Key &lt;" Name="Keyboard Unit (Pilot)_Key &lt;.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key &gt;.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key &gt;;Helios.Base.PushButton;Key &gt;" Name="Keyboard Unit (Pilot)_Key &gt;.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Key ENTER.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Key ENTER;Helios.Base.PushButton;Key ENTER" Name="Keyboard Unit (Pilot)_Key ENTER.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Brightness Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Keyboard Unit (Pilot)_Brightness Control;Helios.Base.Potentiometer;Keyboard Unit (Pilot)_Brightness Control" Name="Keyboard Unit (Pilot)_Brightness Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).Scratchpad.changed" />
+      <Action Target="Visual;Monitor 1.Keyboard Unit (Pilot).Keyboard Unit (Pilot)_Scratchpad;Helios.Base.TextDisplay;Keyboard Unit (Pilot)_Scratchpad" Name="Keyboard Unit (Pilot)_Scratchpad.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Ready Flag.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Ready Flag" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Dispensing Flag.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Dispensing Flag" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Direction Front Left.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Direction Front Left" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Direction Front Right.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Direction Front Right" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Direction Aft Left.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Direction Aft Left" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Direction Aft Right.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Direction Aft Right" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Zone Front.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Zone Front" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Zone Left.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Zone Left" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Zone Aft.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Zone Aft" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Threat Zone Right.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Threat Display;Helios.AH64D.CMWS_THREATDISPLAY;CMWS Display_Threat Display" Name="CMWS Display_CMWS Display_Threat Display.set.Threat Zone Right" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Line 1.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Line 1;Helios.Base.TextDisplay;CMWS Display_Line 1" Name="CMWS Display_Line 1.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Line 2.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Line 2;Helios.Base.TextDisplay;CMWS Display_Line 2" Name="CMWS Display_Line 2.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Power Switch.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Power Switch;Helios.Base.RotarySwitch;CMWS Display_Power Switch" Name="CMWS Display_Power Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Audio Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Audio Volume;Helios.Base.Potentiometer;CMWS Display_Audio Volume" Name="CMWS Display_Audio Volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Brightness Knob.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Display Brightness;Helios.Base.Potentiometer;CMWS Display_Display Brightness" Name="CMWS Display_Display Brightness.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Arm Switch.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Arm;Helios.Base.ToggleSwitch;CMWS Display_Arm" Name="CMWS Display_Arm.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Mode;Helios.Base.ToggleSwitch;CMWS Display_Mode" Name="CMWS Display_Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Operation Switch.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Operation;Helios.Base.ToggleSwitch;CMWS Display_Operation" Name="CMWS Display_Operation.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Flare Jettison Switch.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Jettison Switch Cover.changed" />
+      <Action Target="Visual;Monitor 1.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).Preset Button.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Preset Button;Helios.Base.PushButton;Preset Button" Name="Up Front Display (Pilot)_Preset Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).Enter Button.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Enter Button;Helios.Base.PushButton;Enter Button" Name="Up Front Display (Pilot)_Enter Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).Stopwatch Button.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Stopwatch Button;Helios.Base.PushButton;Stopwatch Button" Name="Up Front Display (Pilot)_Stopwatch Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).Swap Button.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Swap Button;Helios.Base.PushButton;Swap Button" Name="Up Front Display (Pilot)_Swap Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).IDM Rocker Switch.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_IDM Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_IDM Switch" Name="Up Front Display (Pilot)_IDM Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).WCA Rocker Switch.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_WCA Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_WCA Switch" Name="Up Front Display (Pilot)_WCA Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).RTS Rocker Switch.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_RTS Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_RTS Switch" Name="Up Front Display (Pilot)_RTS Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).Brightness Control Knob.changed" />
+      <Action Target="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_Brightness Control;Helios.Base.Potentiometer;Up Front Display (Pilot)_Brightness Control" Name="Up Front Display (Pilot)_Brightness Control.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).Master Warning Button.changed" />
+      <Action Target="Visual;Monitor 1.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).Master Warning Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).Master Caution Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).Master Caution Button.changed" />
+      <Action Target="Visual;Monitor 1.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).Ground Override On Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Ground Override;Helios.Base.IndicatorPushButton;Ground Override" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).Ground Override.changed" />
+      <Action Target="Visual;Monitor 1.Ground Override;Helios.Base.IndicatorPushButton;Ground Override" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).Master Arm.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).Armed Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).Safe Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 1 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 1 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.APU Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 2 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 2 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng1 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 1 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng1 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 1 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.APU Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.APU Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng2 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 2 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng2 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 2 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Primary Discharge Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Discharge Primary Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Primary Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Reserve Discharge Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Discharge Reserve Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Reserve Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Fire Test Switch.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Test Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Test Toggle Switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 1 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 1 Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.APU Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 2 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Fire Panel.Eng 2 Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Right (Pilot)_Button T1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Right (Pilot)_Button T1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Right (Pilot)_Button T2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Right (Pilot)_Button T2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Right (Pilot)_Button T3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Right (Pilot)_Button T3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Right (Pilot)_Button T4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Right (Pilot)_Button T4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Right (Pilot)_Button T5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Right (Pilot)_Button T5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Right (Pilot)_Button T6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button T6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Right (Pilot)_Button T6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button T6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Right (Pilot)_Button Asterisk.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button Asterisk" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Right (Pilot)_Button Asterisk.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button Asterisk" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Right (Pilot)_Button R1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Right (Pilot)_Button R1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Right (Pilot)_Button R2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Right (Pilot)_Button R2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Right (Pilot)_Button R3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Right (Pilot)_Button R3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Right (Pilot)_Button R4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Right (Pilot)_Button R4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Right (Pilot)_Button R5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Right (Pilot)_Button R5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Right (Pilot)_Button R6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button R6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Right (Pilot)_Button R6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button R6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Right (Pilot)_Button VID.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button VID" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Right (Pilot)_Button VID.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button VID" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Right (Pilot)_Button COM.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button COM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Right (Pilot)_Button COM.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button COM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Right (Pilot)_Button L1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Right (Pilot)_Button L1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Right (Pilot)_Button L2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Right (Pilot)_Button L2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Right (Pilot)_Button L3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Right (Pilot)_Button L3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Right (Pilot)_Button L4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Right (Pilot)_Button L4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Right (Pilot)_Button L5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Right (Pilot)_Button L5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Right (Pilot)_Button L6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button L6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Right (Pilot)_Button L6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button L6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Right (Pilot)_Button FCR.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button FCR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Right (Pilot)_Button FCR.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button FCR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Right (Pilot)_Button WPN.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button WPN" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Right (Pilot)_Button WPN.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button WPN" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Right (Pilot)_Button TSD.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button TSD" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Right (Pilot)_Button TSD.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button TSD" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Right (Pilot)_Button B1/M(Menu).pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B1/M(Menu)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Right (Pilot)_Button B1/M(Menu).released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B1/M(Menu)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Right (Pilot)_Button B2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Right (Pilot)_Button B2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Right (Pilot)_Button B3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Right (Pilot)_Button B3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Right (Pilot)_Button B4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Right (Pilot)_Button B4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Right (Pilot)_Button B5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Right (Pilot)_Button B5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Right (Pilot)_Button B6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button B6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Right (Pilot)_Button B6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button B6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Right (Pilot)_Button A/C.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).push.Button A/C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Right (Pilot)_Button A/C.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).release.Button A/C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Display Mode;Helios.Base.RotarySwitch;MFD Right (Pilot)_Display Mode" Name="MFD Right (Pilot)_Display Mode.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).set.Mode Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Brightness Control;Helios.Base.Potentiometer;MFD Right (Pilot)_Brightness Control" Name="MFD Right (Pilot)_Brightness Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).set.Brightness Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Right (Pilot).MFD Right (Pilot)_Video Control;Helios.Base.Potentiometer;MFD Right (Pilot)_Video Control" Name="MFD Right (Pilot)_Video Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Right (Pilot).set.Video Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Left (Pilot)_Button T1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Left (Pilot)_Button T1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Left (Pilot)_Button T2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Left (Pilot)_Button T2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Left (Pilot)_Button T3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T3;Helios.Base.PushButton;Button T3" Name="MFD Left (Pilot)_Button T3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Left (Pilot)_Button T4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T4;Helios.Base.PushButton;Button T4" Name="MFD Left (Pilot)_Button T4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Left (Pilot)_Button T5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T5;Helios.Base.PushButton;Button T5" Name="MFD Left (Pilot)_Button T5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Left (Pilot)_Button T6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button T6;Helios.Base.PushButton;Button T6" Name="MFD Left (Pilot)_Button T6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Left (Pilot)_Button Asterisk.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button Asterisk" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button Asterisk;Helios.Base.PushButton;Button Asterisk" Name="MFD Left (Pilot)_Button Asterisk.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button Asterisk" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Left (Pilot)_Button R1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R1;Helios.Base.PushButton;Button R1" Name="MFD Left (Pilot)_Button R1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Left (Pilot)_Button R2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R2;Helios.Base.PushButton;Button R2" Name="MFD Left (Pilot)_Button R2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Left (Pilot)_Button R3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R3;Helios.Base.PushButton;Button R3" Name="MFD Left (Pilot)_Button R3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Left (Pilot)_Button R4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R4;Helios.Base.PushButton;Button R4" Name="MFD Left (Pilot)_Button R4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Left (Pilot)_Button R5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R5;Helios.Base.PushButton;Button R5" Name="MFD Left (Pilot)_Button R5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Left (Pilot)_Button R6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button R6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button R6;Helios.Base.PushButton;Button R6" Name="MFD Left (Pilot)_Button R6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button R6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Left (Pilot)_Button VID.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button VID" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button VID;Helios.Base.PushButton;Button VID" Name="MFD Left (Pilot)_Button VID.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button VID" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Left (Pilot)_Button COM.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button COM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button COM;Helios.Base.PushButton;Button COM" Name="MFD Left (Pilot)_Button COM.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button COM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Left (Pilot)_Button L1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L1;Helios.Base.PushButton;Button L1" Name="MFD Left (Pilot)_Button L1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Left (Pilot)_Button L2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L2;Helios.Base.PushButton;Button L2" Name="MFD Left (Pilot)_Button L2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Left (Pilot)_Button L3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L3;Helios.Base.PushButton;Button L3" Name="MFD Left (Pilot)_Button L3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Left (Pilot)_Button L4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L4;Helios.Base.PushButton;Button L4" Name="MFD Left (Pilot)_Button L4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Left (Pilot)_Button L5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L5;Helios.Base.PushButton;Button L5" Name="MFD Left (Pilot)_Button L5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Left (Pilot)_Button L6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button L6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button L6;Helios.Base.PushButton;Button L6" Name="MFD Left (Pilot)_Button L6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button L6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Left (Pilot)_Button FCR.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button FCR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button FCR;Helios.Base.PushButton;Button FCR" Name="MFD Left (Pilot)_Button FCR.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button FCR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Left (Pilot)_Button WPN.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button WPN" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button WPN;Helios.Base.PushButton;Button WPN" Name="MFD Left (Pilot)_Button WPN.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button WPN" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Left (Pilot)_Button TSD.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button TSD" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button TSD;Helios.Base.PushButton;Button TSD" Name="MFD Left (Pilot)_Button TSD.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button TSD" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Left (Pilot)_Button B1/M(Menu).pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B1/M(Menu)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B1/M(Menu);Helios.Base.PushButton;Button B1/M(Menu)" Name="MFD Left (Pilot)_Button B1/M(Menu).released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B1/M(Menu)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Left (Pilot)_Button B2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B2;Helios.Base.PushButton;Button B2" Name="MFD Left (Pilot)_Button B2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Left (Pilot)_Button B3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B3;Helios.Base.PushButton;Button B3" Name="MFD Left (Pilot)_Button B3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Left (Pilot)_Button B4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B4;Helios.Base.PushButton;Button B4" Name="MFD Left (Pilot)_Button B4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Left (Pilot)_Button B5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B5;Helios.Base.PushButton;Button B5" Name="MFD Left (Pilot)_Button B5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Left (Pilot)_Button B6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button B6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button B6;Helios.Base.PushButton;Button B6" Name="MFD Left (Pilot)_Button B6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button B6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Left (Pilot)_Button A/C.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button A/C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).Button A/C;Helios.Base.PushButton;Button A/C" Name="MFD Left (Pilot)_Button A/C.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button A/C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Display Mode;Helios.Base.RotarySwitch;MFD Left (Pilot)_Display Mode" Name="MFD Left (Pilot)_Display Mode.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).set.Mode Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Brightness Control;Helios.Base.Potentiometer;MFD Left (Pilot)_Brightness Control" Name="MFD Left (Pilot)_Brightness Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).set.Brightness Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.MFD Left (Pilot).MFD Left (Pilot)_Video Control;Helios.Base.Potentiometer;MFD Left (Pilot)_Video Control" Name="MFD Left (Pilot)_Video Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).set.Video Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key A;Helios.Base.PushButton;Key A" Name="Keyboard Unit (Pilot)_Key A.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key A" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key A;Helios.Base.PushButton;Key A" Name="Keyboard Unit (Pilot)_Key A.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key A" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key B;Helios.Base.PushButton;Key B" Name="Keyboard Unit (Pilot)_Key B.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key B" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key B;Helios.Base.PushButton;Key B" Name="Keyboard Unit (Pilot)_Key B.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key B" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key C;Helios.Base.PushButton;Key C" Name="Keyboard Unit (Pilot)_Key C.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key C;Helios.Base.PushButton;Key C" Name="Keyboard Unit (Pilot)_Key C.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key C" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key D;Helios.Base.PushButton;Key D" Name="Keyboard Unit (Pilot)_Key D.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key D" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key D;Helios.Base.PushButton;Key D" Name="Keyboard Unit (Pilot)_Key D.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key D" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key E;Helios.Base.PushButton;Key E" Name="Keyboard Unit (Pilot)_Key E.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key E" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key E;Helios.Base.PushButton;Key E" Name="Keyboard Unit (Pilot)_Key E.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key E" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key F;Helios.Base.PushButton;Key F" Name="Keyboard Unit (Pilot)_Key F.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key F" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key F;Helios.Base.PushButton;Key F" Name="Keyboard Unit (Pilot)_Key F.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key F" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 1;Helios.Base.PushButton;Key 1" Name="Keyboard Unit (Pilot)_Key 1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 1;Helios.Base.PushButton;Key 1" Name="Keyboard Unit (Pilot)_Key 1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 2;Helios.Base.PushButton;Key 2" Name="Keyboard Unit (Pilot)_Key 2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 2;Helios.Base.PushButton;Key 2" Name="Keyboard Unit (Pilot)_Key 2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 3;Helios.Base.PushButton;Key 3" Name="Keyboard Unit (Pilot)_Key 3.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 3;Helios.Base.PushButton;Key 3" Name="Keyboard Unit (Pilot)_Key 3.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key G;Helios.Base.PushButton;Key G" Name="Keyboard Unit (Pilot)_Key G.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key G" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key G;Helios.Base.PushButton;Key G" Name="Keyboard Unit (Pilot)_Key G.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key G" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key H;Helios.Base.PushButton;Key H" Name="Keyboard Unit (Pilot)_Key H.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key H" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key H;Helios.Base.PushButton;Key H" Name="Keyboard Unit (Pilot)_Key H.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key H" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key I;Helios.Base.PushButton;Key I" Name="Keyboard Unit (Pilot)_Key I.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key I" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key I;Helios.Base.PushButton;Key I" Name="Keyboard Unit (Pilot)_Key I.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key I" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key J;Helios.Base.PushButton;Key J" Name="Keyboard Unit (Pilot)_Key J.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key J" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key J;Helios.Base.PushButton;Key J" Name="Keyboard Unit (Pilot)_Key J.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key J" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key K;Helios.Base.PushButton;Key K" Name="Keyboard Unit (Pilot)_Key K.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key K" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key K;Helios.Base.PushButton;Key K" Name="Keyboard Unit (Pilot)_Key K.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key K" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key L;Helios.Base.PushButton;Key L" Name="Keyboard Unit (Pilot)_Key L.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key L" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key L;Helios.Base.PushButton;Key L" Name="Keyboard Unit (Pilot)_Key L.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key L" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 4;Helios.Base.PushButton;Key 4" Name="Keyboard Unit (Pilot)_Key 4.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 4;Helios.Base.PushButton;Key 4" Name="Keyboard Unit (Pilot)_Key 4.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 5;Helios.Base.PushButton;Key 5" Name="Keyboard Unit (Pilot)_Key 5.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 5;Helios.Base.PushButton;Key 5" Name="Keyboard Unit (Pilot)_Key 5.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 6;Helios.Base.PushButton;Key 6" Name="Keyboard Unit (Pilot)_Key 6.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 6;Helios.Base.PushButton;Key 6" Name="Keyboard Unit (Pilot)_Key 6.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key M;Helios.Base.PushButton;Key M" Name="Keyboard Unit (Pilot)_Key M.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key M" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key M;Helios.Base.PushButton;Key M" Name="Keyboard Unit (Pilot)_Key M.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key M" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key N;Helios.Base.PushButton;Key N" Name="Keyboard Unit (Pilot)_Key N.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key N" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key N;Helios.Base.PushButton;Key N" Name="Keyboard Unit (Pilot)_Key N.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key N" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key O;Helios.Base.PushButton;Key O" Name="Keyboard Unit (Pilot)_Key O.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key O" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key O;Helios.Base.PushButton;Key O" Name="Keyboard Unit (Pilot)_Key O.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key O" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key P;Helios.Base.PushButton;Key P" Name="Keyboard Unit (Pilot)_Key P.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key P" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key P;Helios.Base.PushButton;Key P" Name="Keyboard Unit (Pilot)_Key P.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key P" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Q;Helios.Base.PushButton;Key Q" Name="Keyboard Unit (Pilot)_Key Q.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key Q" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Q;Helios.Base.PushButton;Key Q" Name="Keyboard Unit (Pilot)_Key Q.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key Q" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key R;Helios.Base.PushButton;Key R" Name="Keyboard Unit (Pilot)_Key R.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key R" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key R;Helios.Base.PushButton;Key R" Name="Keyboard Unit (Pilot)_Key R.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key R" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 7;Helios.Base.PushButton;Key 7" Name="Keyboard Unit (Pilot)_Key 7.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 7;Helios.Base.PushButton;Key 7" Name="Keyboard Unit (Pilot)_Key 7.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 8;Helios.Base.PushButton;Key 8" Name="Keyboard Unit (Pilot)_Key 8.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 8;Helios.Base.PushButton;Key 8" Name="Keyboard Unit (Pilot)_Key 8.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 9;Helios.Base.PushButton;Key 9" Name="Keyboard Unit (Pilot)_Key 9.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 9;Helios.Base.PushButton;Key 9" Name="Keyboard Unit (Pilot)_Key 9.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key S;Helios.Base.PushButton;Key S" Name="Keyboard Unit (Pilot)_Key S.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key S" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key S;Helios.Base.PushButton;Key S" Name="Keyboard Unit (Pilot)_Key S.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key S" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key T;Helios.Base.PushButton;Key T" Name="Keyboard Unit (Pilot)_Key T.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key T" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key T;Helios.Base.PushButton;Key T" Name="Keyboard Unit (Pilot)_Key T.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key T" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key U;Helios.Base.PushButton;Key U" Name="Keyboard Unit (Pilot)_Key U.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key U" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key U;Helios.Base.PushButton;Key U" Name="Keyboard Unit (Pilot)_Key U.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key U" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key V;Helios.Base.PushButton;Key V" Name="Keyboard Unit (Pilot)_Key V.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key V" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key V;Helios.Base.PushButton;Key V" Name="Keyboard Unit (Pilot)_Key V.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key V" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key W;Helios.Base.PushButton;Key W" Name="Keyboard Unit (Pilot)_Key W.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key W" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key W;Helios.Base.PushButton;Key W" Name="Keyboard Unit (Pilot)_Key W.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key W" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key X;Helios.Base.PushButton;Key X" Name="Keyboard Unit (Pilot)_Key X.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key X" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key X;Helios.Base.PushButton;Key X" Name="Keyboard Unit (Pilot)_Key X.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key X" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Decimal;Helios.Base.PushButton;Key Decimal" Name="Keyboard Unit (Pilot)_Key Decimal.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key Decimal" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Decimal;Helios.Base.PushButton;Key Decimal" Name="Keyboard Unit (Pilot)_Key Decimal.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key Decimal" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 0;Helios.Base.PushButton;Key 0" Name="Keyboard Unit (Pilot)_Key 0.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key 0" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key 0;Helios.Base.PushButton;Key 0" Name="Keyboard Unit (Pilot)_Key 0.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key 0" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key +/-;Helios.Base.PushButton;Key +/-" Name="Keyboard Unit (Pilot)_Key +/-.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key +/-" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key +/-;Helios.Base.PushButton;Key +/-" Name="Keyboard Unit (Pilot)_Key +/-.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key +/-" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Y;Helios.Base.PushButton;Key Y" Name="Keyboard Unit (Pilot)_Key Y.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key Y" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Y;Helios.Base.PushButton;Key Y" Name="Keyboard Unit (Pilot)_Key Y.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key Y" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Z;Helios.Base.PushButton;Key Z" Name="Keyboard Unit (Pilot)_Key Z.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key Z" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key Z;Helios.Base.PushButton;Key Z" Name="Keyboard Unit (Pilot)_Key Z.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key Z" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key /;Helios.Base.PushButton;Key /" Name="Keyboard Unit (Pilot)_Key /.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key /" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key /;Helios.Base.PushButton;Key /" Name="Keyboard Unit (Pilot)_Key /.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key /" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key BKS;Helios.Base.PushButton;Key BKS" Name="Keyboard Unit (Pilot)_Key BKS.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key BKS" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key BKS;Helios.Base.PushButton;Key BKS" Name="Keyboard Unit (Pilot)_Key BKS.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key BKS" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key SPC;Helios.Base.PushButton;Key SPC" Name="Keyboard Unit (Pilot)_Key SPC.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key SPC" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key SPC;Helios.Base.PushButton;Key SPC" Name="Keyboard Unit (Pilot)_Key SPC.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key SPC" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key *;Helios.Base.PushButton;Key *" Name="Keyboard Unit (Pilot)_Key *.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key *" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key *;Helios.Base.PushButton;Key *" Name="Keyboard Unit (Pilot)_Key *.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key *" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key DIV;Helios.Base.PushButton;Key DIV" Name="Keyboard Unit (Pilot)_Key DIV.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key DIV" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key DIV;Helios.Base.PushButton;Key DIV" Name="Keyboard Unit (Pilot)_Key DIV.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key DIV" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key +;Helios.Base.PushButton;Key +" Name="Keyboard Unit (Pilot)_Key +.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key +" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key +;Helios.Base.PushButton;Key +" Name="Keyboard Unit (Pilot)_Key +.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key +" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key -;Helios.Base.PushButton;Key -" Name="Keyboard Unit (Pilot)_Key -.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key -" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key -;Helios.Base.PushButton;Key -" Name="Keyboard Unit (Pilot)_Key -.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key -" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key CLR;Helios.Base.PushButton;Key CLR" Name="Keyboard Unit (Pilot)_Key CLR.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key CLR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key CLR;Helios.Base.PushButton;Key CLR" Name="Keyboard Unit (Pilot)_Key CLR.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key CLR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key &lt;;Helios.Base.PushButton;Key &lt;" Name="Keyboard Unit (Pilot)_Key &lt;.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key &lt;" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key &lt;;Helios.Base.PushButton;Key &lt;" Name="Keyboard Unit (Pilot)_Key &lt;.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key &lt;" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key &gt;;Helios.Base.PushButton;Key &gt;" Name="Keyboard Unit (Pilot)_Key &gt;.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key &gt;" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key &gt;;Helios.Base.PushButton;Key &gt;" Name="Keyboard Unit (Pilot)_Key &gt;.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key &gt;" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key ENTER;Helios.Base.PushButton;Key ENTER" Name="Keyboard Unit (Pilot)_Key ENTER.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).push.Key ENTER" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Key ENTER;Helios.Base.PushButton;Key ENTER" Name="Keyboard Unit (Pilot)_Key ENTER.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).release.Key ENTER" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Keyboard Unit (Pilot).Keyboard Unit (Pilot)_Brightness Control;Helios.Base.Potentiometer;Keyboard Unit (Pilot)_Brightness Control" Name="Keyboard Unit (Pilot)_Brightness Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (Pilot).set.Brightness Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Power Switch;Helios.Base.RotarySwitch;CMWS Display_Power Switch" Name="CMWS Display_Power Switch.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Power Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Audio Volume;Helios.Base.Potentiometer;CMWS Display_Audio Volume" Name="CMWS Display_Audio Volume.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Audio Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Display Brightness;Helios.Base.Potentiometer;CMWS Display_Display Brightness" Name="CMWS Display_Display Brightness.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Brightness Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Arm;Helios.Base.ToggleSwitch;CMWS Display_Arm" Name="CMWS Display_Arm.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Arm Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Mode;Helios.Base.ToggleSwitch;CMWS Display_Mode" Name="CMWS Display_Mode.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Operation;Helios.Base.ToggleSwitch;CMWS Display_Operation" Name="CMWS Display_Operation.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Operation Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Flare Jettison Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Jettison Switch Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Preset Button;Helios.Base.PushButton;Preset Button" Name="Up Front Display (Pilot)_Preset Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).push.Preset Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Preset Button;Helios.Base.PushButton;Preset Button" Name="Up Front Display (Pilot)_Preset Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).release.Preset Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Enter Button;Helios.Base.PushButton;Enter Button" Name="Up Front Display (Pilot)_Enter Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).push.Enter Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Enter Button;Helios.Base.PushButton;Enter Button" Name="Up Front Display (Pilot)_Enter Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).release.Enter Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Stopwatch Button;Helios.Base.PushButton;Stopwatch Button" Name="Up Front Display (Pilot)_Stopwatch Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).push.Stopwatch Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Stopwatch Button;Helios.Base.PushButton;Stopwatch Button" Name="Up Front Display (Pilot)_Stopwatch Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).release.Stopwatch Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Swap Button;Helios.Base.PushButton;Swap Button" Name="Up Front Display (Pilot)_Swap Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).push.Swap Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Swap Button;Helios.Base.PushButton;Swap Button" Name="Up Front Display (Pilot)_Swap Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).release.Swap Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_IDM Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_IDM Switch" Name="Up Front Display (Pilot)_IDM Switch.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).set.IDM Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_WCA Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_WCA Switch" Name="Up Front Display (Pilot)_WCA Switch.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).set.WCA Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_RTS Switch;Helios.Base.RockerSwitch;Up Front Display (Pilot)_RTS Switch" Name="Up Front Display (Pilot)_RTS Switch.position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).set.RTS Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Up Front Display (Pilot).Up Front Display (Pilot)_Brightness Control;Helios.Base.Potentiometer;Up Front Display (Pilot)_Brightness Control" Name="Up Front Display (Pilot)_Brightness Control.value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Up Front Display (Pilot).set.Brightness Control Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).push.Master Warning Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).release.Master Warning Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).push.Master Caution Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).release.Master Caution Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Ground Override;Helios.Base.IndicatorPushButton;Ground Override" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).push.Ground Override" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Ground Override;Helios.Base.IndicatorPushButton;Ground Override" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).release.Ground Override" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).push.Master Arm" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).release.Master Arm" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Test Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Test Toggle Switch" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.Fire Test Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Discharge Primary Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Primary Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.Primary Extinguisher button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Discharge Primary Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Primary Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.Primary Extinguisher button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Discharge Reserve Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Reserve Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.Reserve Extinguisher button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Discharge Reserve Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Reserve Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.Reserve Extinguisher button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 1 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 1 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 1 Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.ENG 1 Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.APU Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.APU Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.APU Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.APU Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 2 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 2 Button.Protected Push Button;Helios.Base.DualIndicatorPushButton;Protected Push Button" Name="Protected Push Button.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Fire Panel.Eng 2 Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.ENG 2 Button Cover" />
+      <TriggerValue />
+    </Binding>
+  </Bindings>
+</HeliosProfile>
