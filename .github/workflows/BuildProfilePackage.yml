@@ -46,7 +46,7 @@ jobs:
           INITIAL_VERSION: '0.0.0'
       - name: Check outputs
         run: |
-          env
+          #env
           echo ${{ env.VEHICLE }} - ${{ env.VEHICLECOMMONNAME }}
           echo "Commit SHA (short) - " ${{ steps.vars.outputs.sha_short }}
           echo "New Release - V " ${{ steps.bump_tag.outputs.tag }}
