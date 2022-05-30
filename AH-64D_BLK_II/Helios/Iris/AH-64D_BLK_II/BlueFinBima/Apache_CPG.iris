@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IrisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ViewPorts>
+    <ViewPort>
+      <Name>Left MFD CP/G</Name>
+      <Description>This is the Left MFCD for the Co-pilot / Gunner</Description>
+      <Host>lightning.home</Host>
+      <Port>9093</Port>
+      <ScreenCaptureX>6900</ScreenCaptureX>
+      <ScreenCaptureY>0</ScreenCaptureY>
+      <SizeX>398</SizeX>
+      <SizeY>398</SizeY>
+      <ScreenPositionX>86</ScreenPositionX>
+      <ScreenPositionY>279</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>Right MFD CP/G</Name>
+      <Description>This is the Right MFCD for the Co-pilot / Gunner</Description>
+      <Host>lightning.home</Host>
+      <Port>9094</Port>
+      <ScreenCaptureX>6900</ScreenCaptureX>
+      <ScreenCaptureY>398</ScreenCaptureY>
+      <SizeX>398</SizeX>
+      <SizeY>398</SizeY>
+      <ScreenPositionX>1421</ScreenPositionX>
+      <ScreenPositionY>279</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>EUFD CP/G</Name>
+      <Description>CP/G Enhanced Up Front Device for the Co-pilot / Gunner</Description>
+      <Host>lightning.home</Host>
+      <Port>9095</Port>
+      <ScreenCaptureX>7298</ScreenCaptureX>
+      <ScreenCaptureY>0</ScreenCaptureY>
+      <SizeX>362</SizeX>
+      <SizeY>181</SizeY>
+      <ScreenPositionX>1417</ScreenPositionX>
+      <ScreenPositionY>13</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>TEDAC</Name>
+      <Description>TADS Controller</Description>
+      <Host>lightning.home</Host>
+      <Port>9096</Port>
+      <ScreenCaptureX>6900</ScreenCaptureX>
+      <ScreenCaptureY>796</ScreenCaptureY>
+      <SizeX>550</SizeX>
+      <SizeY>550</SizeY>
+      <ScreenPositionX>682</ScreenPositionX>
+      <ScreenPositionY>308</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>Background</Name>
+      <Description>This is the full screen background for the back of the screen</Description>
+      <Host>lightning.home</Host>
+      <Port>12016</Port>
+      <ScreenCaptureX>0</ScreenCaptureX>
+      <ScreenCaptureY>0</ScreenCaptureY>
+      <SizeX>1920</SizeX>
+      <SizeY>1080</SizeY>
+      <ScreenPositionX>0</ScreenPositionX>
+      <ScreenPositionY>0</ScreenPositionY>
+    </ViewPort>
+  </ViewPorts>
+  <PollingInterval>100</PollingInterval>
+</IrisConfig>
