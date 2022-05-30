@@ -2,22 +2,22 @@
 # installed with Helios 1.6.  If the commit contains the text
 # #patch then the patch level will be bumped.
 
-name: CreateHelios16
+name: CreateDevelopmentHelios16
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ dev ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 env:
   VEHICLE: AH-64D_BLK_II
   VEHICLECOMMONNAME: AH-64D Apache
-  MINHELIOSRELEASE: 1.6.5300.0000
+  MINHELIOSRELEASE: 1.6.1000.0000
   PROFILENAME: Apache
 
 
@@ -33,7 +33,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          fetch-depth: '0'
+          ref: dev
       - name: Set outputs
         id: vars
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
@@ -60,19 +60,22 @@ jobs:
           sed -i -- 's/_Vehicle/'"${{ env.VEHICLE }}"'/g' Profile16.json
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' Profile16.json
           sed -i -- 's#_Author#'"${GITHUB_ACTOR}"'#g' Profile16.json
+          sed -i -- 's#Helios/#HeliosDev/#g' Profile16.json
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
-          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#'"DEV ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
 
       # create a zip file using the runners shell
       - name: Package Files
         run: |
-          # mv ./${{ env.VEHICLE }}/Helios .
-          zip -r output/${{ env.VEHICLE }} V${{ steps.bump_tag.outputs.tag }}.helios16 ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios/Profiles/*.hply"
+          mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/HeliosDev
+          # mv ./Helios ./HeliosDev          
+          zip -r "output/${{ env.VEHICLE }} Dev V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/HeliosDev/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/HeliosDev/Profiles/*.bak" "./${{ env.VEHICLE }}/HeliosDev/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.VEHICLECOMMONNAME }} helios16 package
-          path: output/${{ env.VEHICLE }} V${{ steps.bump_tag.outputs.tag }}.helios16
+          name: ${{ env.VEHICLECOMMONNAME }} helios16 development package
+          path: "output/${{ env.VEHICLE }} Dev V${{ steps.bump_tag.outputs.tag }}.helios16"
 
