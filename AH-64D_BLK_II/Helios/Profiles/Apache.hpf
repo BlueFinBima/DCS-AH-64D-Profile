@@ -866,6 +866,18 @@
                 <AllowInteractionLegacy>False</AllowInteractionLegacy>
               </Interaction>
               <Children>
+                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Master Zeroize Toggle" SnapTarget="True" Locked="False">
+                  <Location>37,86</Location>
+                  <Size>36,72</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
+                  <PositionTwoImage>{Helios}/Images/Toggles/orange-round-down.png</PositionTwoImage>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <Children />
+                </Control>
                 <Control TypeIdentifier="Helios.Base.GuardCover" Name="Guard Cover" SnapTarget="True" Locked="False">
                   <Location>35,34</Location>
                   <Size>41,127</Size>
@@ -887,19 +899,68 @@
                   <DefaultGuardPosition>Down</DefaultGuardPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Master Zeroize Toggle" SnapTarget="True" Locked="False">
-                  <Location>37,86</Location>
-                  <Size>36,72</Size>
-                  <Hidden>True</Hidden>
-                  <SwitchType>OnOn</SwitchType>
-                  <Orientation>Vertical</Orientation>
-                  <ClickType>Swipe</ClickType>
-                  <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
-                  <PositionTwoImage>{Helios}/Images/Toggles/orange-round-down.png</PositionTwoImage>
-                  <DefaultPosition>Two</DefaultPosition>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="Backup Panel" SnapTarget="True" Locked="False">
+              <Location>1548,738</Location>
+              <Size>370,287</Size>
+              <Hidden>False</Hidden>
+              <Background />
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>True</AllowInteractionNone>
+                <AllowInteractionLegacy>False</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.AH64D.Altimeter" Name="Altimeter 1" SnapTarget="True" Locked="False">
+                  <Location>215,132</Location>
+                  <Size>133,137</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="False">
+                  <Location>215,230</Location>
+                  <Size>40,40</Size>
+                  <Hidden>False</Hidden>
+                  <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
+                  <RotationStep>5</RotationStep>
+                  <StepValue>0.1</StepValue>
+                  <InitialRotation>0</InitialRotation>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.AH64D.IAS" Name="Standby IAS Gauge" SnapTarget="True" Locked="False">
+                  <Location>215,0</Location>
+                  <Size>133,132</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.AH64D.SAI" Name="ADI" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>215,215</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.PotentiometerEndless" Name="PotentiometerEndless" SnapTarget="True" Locked="False">
+                  <Location>0,163</Location>
+                  <Size>61,61</Size>
+                  <Hidden>False</Hidden>
+                  <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
+                  <InitialValue>0.5</InitialValue>
+                  <StepValue>0.05</StepValue>
+                  <MaxValue>0.9</MaxValue>
+                  <MinValue>0.1</MinValue>
+                  <InitialRotation>0</InitialRotation>
+                  <RotationTravel>360</RotationTravel>
+                  <Continuous>True</Continuous>
                   <Children />
                 </Control>
               </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.AH64D.FAT" Name="FAT" SnapTarget="True" Locked="False">
+              <Location>0,611</Location>
+              <Size>136,140</Size>
+              <Hidden>False</Hidden>
+              <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.PLTRIGHT" Name="MFD Right (Pilot)" SnapTarget="True" Locked="False">
               <Location>1010,250</Location>
@@ -1358,67 +1419,6 @@
             </Control>
           </Children>
         </Control>
-        <Control TypeIdentifier="Helios.Panel" Name="Backup Panel" SnapTarget="True" Locked="False">
-          <Location>1548,738</Location>
-          <Size>370,287</Size>
-          <Hidden>False</Hidden>
-          <Background />
-          <Interaction>
-            <AllowInteractionFull>False</AllowInteractionFull>
-            <AllowInteractionNone>True</AllowInteractionNone>
-            <AllowInteractionLegacy>False</AllowInteractionLegacy>
-          </Interaction>
-          <Children>
-            <Control TypeIdentifier="Helios.AH64D.Altimeter" Name="Altimeter 1" SnapTarget="True" Locked="False">
-              <Location>215,132</Location>
-              <Size>133,137</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="False">
-              <Location>215,230</Location>
-              <Size>40,40</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>0</InitialRotation>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.AH64D.IAS" Name="Standby IAS Gauge" SnapTarget="True" Locked="False">
-              <Location>215,0</Location>
-              <Size>133,132</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.AH64D.SAI" Name="ADI" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>215,215</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.PotentiometerEndless" Name="PotentiometerEndless" SnapTarget="True" Locked="False">
-              <Location>0,163</Location>
-              <Size>61,61</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
-              <InitialValue>0.5</InitialValue>
-              <StepValue>0.05</StepValue>
-              <MaxValue>0.9</MaxValue>
-              <MinValue>0.1</MinValue>
-              <InitialRotation>0</InitialRotation>
-              <RotationTravel>360</RotationTravel>
-              <Continuous>True</Continuous>
-              <Children />
-            </Control>
-          </Children>
-        </Control>
-        <Control TypeIdentifier="Helios.AH64D.FAT" Name="FAT" SnapTarget="True" Locked="False">
-          <Location>0,611</Location>
-          <Size>136,140</Size>
-          <Hidden>False</Hidden>
-          <Children />
-        </Control>
       </Children>
     </Monitor>
   </Monitors>
@@ -1438,12 +1438,12 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
-      <StaticValue>"C:\Program Files (x86)\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\Apache.iris"</StaticValue>
+      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Stopped" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
-      <StaticValue>"Iris-Client.exe"</StaticValue>
+      <StaticValue>"Iris-Client"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
@@ -3166,58 +3166,53 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).Master Zeroize Switch Cover.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.hidden" />
-      <LuaScript>if TriggerValue==1 then return false else return true end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Pressure.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.Altimeter 1;Helios.AH64D.Altimeter;Altimeter 1" Name="set.air pressure" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter 1;Helios.AH64D.Altimeter;Altimeter 1" Name="set.air pressure" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.Altitude.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.Altimeter 1;Helios.AH64D.Altimeter;Altimeter 1" Name="set.altitude" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Altimeter 1;Helios.AH64D.Altimeter;Altimeter 1" Name="set.altitude" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby IAS.IAS Airspeed.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.Standby IAS Gauge;Helios.AH64D.IAS;Standby IAS Gauge" Name="Standby IAS.set.Indicated Airspeed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Standby IAS Gauge;Helios.AH64D.IAS;Standby IAS Gauge" Name="Standby IAS.set.Indicated Airspeed" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Pitch.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Pitch" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Pitch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Bank.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Bank" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Bank" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Slip Ball.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Slip Ball Offset" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Slip Ball Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Turn Marker.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Turn Indicator Offset" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Turn Indicator Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Warning Flag.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Off Flag" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.Off Flag" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Pitch Adjustment Knob.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.SAI Pitch adjustment offset" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.ADI;Helios.AH64D.SAI;ADI" Name="Standby Attitude Indicator.set.SAI Pitch adjustment offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Pitch Adjustment Knob.changed" />
-      <Action Target="Visual;Monitor 1.Backup Panel.PotentiometerEndless;Helios.Base.PotentiometerEndless;PotentiometerEndless" Name="set.value" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.PotentiometerEndless;Helios.Base.PotentiometerEndless;PotentiometerEndless" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -3234,6 +3229,16 @@
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Pilot Button;Helios.Base.PushButton;Pilot Button" Name="released" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit;Helios.Panel;Pilot Cockpit" Name="set.hidden" />
       <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Pilot Button;Helios.Base.PushButton;Pilot Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
+      <StaticValue>Iris-Client</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Pilot Button;Helios.Base.PushButton;Pilot Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
+      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.TEDAC.AZ/EL Boresight Enable Button;Helios.Base.PushButton;AZ/EL Boresight Enable Button" Name="TEDAC_AZ/EL Boresight Enable Button.pushed" />
@@ -4726,23 +4731,28 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="guard position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch Cover" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="guard.down" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.increment.Pressure Setting Knob" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="guard.up" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Backup Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.decrement.Pressure Setting Knob" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Backup Panel.PotentiometerEndless;Helios.Base.PotentiometerEndless;PotentiometerEndless" Name="value.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.set.Pitch Adjustment Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -5941,6 +5951,16 @@
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
+      <StaticValue>Iris-Client</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
+      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_CPG.iris"</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
       <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
       <StaticValue />
@@ -6073,21 +6093,6 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Eng 2 Button.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="Guard Cover.guard position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.ENG 2 Button Cover" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Backup Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.increment.Pressure Setting Knob" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Backup Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Altimeter.decrement.Pressure Setting Knob" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Backup Panel.PotentiometerEndless;Helios.Base.PotentiometerEndless;PotentiometerEndless" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.set.Pitch Adjustment Knob" />
       <TriggerValue />
     </Binding>
   </Bindings>

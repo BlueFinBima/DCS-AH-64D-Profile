@@ -13,21 +13,22 @@
     <LayoutPanel Orientation="Horizontal">
       <LayoutPanel Orientation="Vertical">
         <LayoutDocumentPane Id="9c3f236f-36e4-49eb-a29a-369b116ec995">
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Interface Status" ContentId="InterfaceStatusPanel" LastActivationTimeStamp="05/30/2022 12:25:51" />
-          <LayoutDocument Title="Monitor 1" ContentId="Visual;Monitor 1;Helios.Monitor;Monitor 1" LastActivationTimeStamp="05/30/2022 13:04:41" />
-          <LayoutDocument Title="Pilot Cockpit" IsSelected="True" IsLastFocusedDocument="True" ContentId="Visual;Monitor 1.Pilot Cockpit;Helios.Panel;Pilot Cockpit" LastActivationTimeStamp="05/30/2022 13:04:47" />
-          <LayoutDocument Title="CPG Cockpit" ContentId="Visual;Monitor 1.CPG Cockpit;Helios.Panel;CPG Cockpit" LastActivationTimeStamp="05/30/2022 13:04:33" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Interface Status" ContentId="InterfaceStatusPanel" LastActivationTimeStamp="05/31/2022 10:29:16" />
+          <LayoutDocument Title="Monitor 1" ContentId="Visual;Monitor 1;Helios.Monitor;Monitor 1" LastActivationTimeStamp="05/31/2022 10:35:07" />
+          <LayoutDocument Title="Pilot Cockpit" IsSelected="True" IsLastFocusedDocument="True" ContentId="Visual;Monitor 1.Pilot Cockpit;Helios.Panel;Pilot Cockpit" LastActivationTimeStamp="05/31/2022 10:35:19" />
+          <LayoutDocument Title="CPG Cockpit" ContentId="Visual;Monitor 1.CPG Cockpit;Helios.Panel;CPG Cockpit" LastActivationTimeStamp="05/31/2022 10:29:30" />
+          <LayoutDocument Title="Master Zeroize Panel" ContentId="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel;Helios.Panel;Master Zeroize Panel" LastActivationTimeStamp="05/31/2022 10:32:18" />
         </LayoutDocumentPane>
         <LayoutAnchorablePane DockHeight="300">
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="300" Title="Bindings" IsSelected="True" ContentId="BindingsPanel" LastActivationTimeStamp="05/30/2022 13:04:48" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="300" Title="Bindings" IsSelected="True" ContentId="BindingsPanel" LastActivationTimeStamp="05/31/2022 10:33:25" />
         </LayoutAnchorablePane>
       </LayoutPanel>
       <LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="300">
         <LayoutAnchorablePane DockWidth="300">
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" IsSelected="True" ContentId="PropertiesPanel" LastActivationTimeStamp="05/30/2022 12:59:53" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" IsSelected="True" ContentId="PropertiesPanel" LastActivationTimeStamp="05/31/2022 10:31:55" />
         </LayoutAnchorablePane>
         <LayoutAnchorablePane>
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Layers" IsSelected="True" ContentId="LayersPanel" LastActivationTimeStamp="05/30/2022 12:57:05" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Layers" IsSelected="True" ContentId="LayersPanel" LastActivationTimeStamp="05/31/2022 10:35:14" />
         </LayoutAnchorablePane>
       </LayoutAnchorablePaneGroup>
     </LayoutPanel>
