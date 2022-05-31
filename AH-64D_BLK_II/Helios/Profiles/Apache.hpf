@@ -902,8 +902,8 @@
               </Children>
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Backup Panel" SnapTarget="True" Locked="False">
-              <Location>1548,738</Location>
-              <Size>370,287</Size>
+              <Location>1643,665</Location>
+              <Size>277,352</Size>
               <Hidden>False</Hidden>
               <Background />
               <Interaction>
@@ -913,13 +913,13 @@
               </Interaction>
               <Children>
                 <Control TypeIdentifier="Helios.AH64D.Altimeter" Name="Altimeter 1" SnapTarget="True" Locked="False">
-                  <Location>215,132</Location>
+                  <Location>144,215</Location>
                   <Size>133,137</Size>
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="False">
-                  <Location>215,230</Location>
+                  <Location>144,313</Location>
                   <Size>40,40</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
@@ -929,19 +929,19 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.AH64D.IAS" Name="Standby IAS Gauge" SnapTarget="True" Locked="False">
-                  <Location>215,0</Location>
+                  <Location>0,215</Location>
                   <Size>133,132</Size>
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.AH64D.SAI" Name="ADI" SnapTarget="True" Locked="False">
-                  <Location>0,0</Location>
+                  <Location>29,0</Location>
                   <Size>215,215</Size>
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.PotentiometerEndless" Name="PotentiometerEndless" SnapTarget="True" Locked="False">
-                  <Location>0,163</Location>
+                  <Location>29,163</Location>
                   <Size>61,61</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>{Helios}/Images/Knobs/knob1.png</KnobImage>
@@ -3156,11 +3156,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (CP/G).Master Warning Indicator.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Warnings Panel CPG.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (CP/G).Master Caution.changed" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Warnings Panel CPG.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="set.physical state" />
       <TriggerValue />
@@ -3213,6 +3208,11 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Standby Attitude Indicator.Pitch Adjustment Knob.changed" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Backup Panel.PotentiometerEndless;Helios.Base.PotentiometerEndless;PotentiometerEndless" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (CP/G).Master Warning.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Warnings Panel CPG.Master Warning;Helios.Base.IndicatorPushButton;Master Warning" Name="set.physical state" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
