@@ -1443,7 +1443,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Stopped" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
-      <StaticValue>"Iris-Client"</StaticValue>
+      <StaticValue>Iris-Client</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
