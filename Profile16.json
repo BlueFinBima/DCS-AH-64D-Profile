@@ -25,7 +25,7 @@
 					"NativeResolution": "1920x1080",
                     "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
-						"Helios/profiles/Apache Remote Viewports.hpf"
+						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf"
                     ],
 					"VersionsRequired": [
 											{
@@ -42,7 +42,7 @@
 					"NativeResolution": "7920x1440",
                     "Description": "Aicraft:\t\tAH-64D Block II ViewPort Configuration for remote profiles _ProfileVersionNumber\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\tN/A\nDefault Size:\t7920x1440\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
-						"Helios/profiles/Apache.hpf","Helios/Images/*.*"
+						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf","AH-64D_BLK_II/Helios/Images/*.*"
                     ],
 					"VersionsRequired": [
 											{

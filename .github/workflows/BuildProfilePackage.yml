@@ -18,6 +18,7 @@ env:
   VEHICLE: AH-64D_BLK_II
   VEHICLECOMMONNAME: AH-64D Apache
   MINHELIOSRELEASE: 1.6.5300.0000
+  PROFILENAME: Apache
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -63,11 +64,13 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+
       # create a zip file using the runners shell
       - name: Package Files
         run: |
-          mv ./${{ env.VEHICLE }}/Helios .
-          zip -r output/${{ env.VEHICLE }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply"
+          # mv ./${{ env.VEHICLE }}/Helios .
+          zip -r output/${{ env.VEHICLE }}.helios16 ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
           name: ${{ env.VEHICLECOMMONNAME }} helios16 package
