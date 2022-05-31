@@ -1438,7 +1438,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
-      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
+      <StaticValue>"%ProgramFiles(x86)%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Stopped" />
@@ -3238,7 +3238,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Pilot Button;Helios.Base.PushButton;Pilot Button" Name="released" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
-      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
+      <StaticValue>"%ProgramFiles(x86)%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Pilot.iris"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.TEDAC.AZ/EL Boresight Enable Button;Helios.Base.PushButton;AZ/EL Boresight Enable Button" Name="TEDAC_AZ/EL Boresight Enable Button.pushed" />
@@ -5958,7 +5958,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CPG Button;Helios.Base.PushButton;CPG Button" Name="released" />
       <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
-      <StaticValue>"%ProgramFiles(x86)%\HeliosVirtualCockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_CPG.iris"</StaticValue>
+      <StaticValue>"%ProgramFiles(x86)%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Client.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_CPG.iris"</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
