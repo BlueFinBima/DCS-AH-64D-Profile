@@ -8,3 +8,6 @@ The CMWS, EUFDs, KUs MFDs & TEDAC are all modelled as Helios gauges with the abi
 auto-bind to the AH-64D profile.  This means that if the AH-64D interface is added in the
 Helioos Profile Editor, and one of these gauges is applied from the toolbox, then there
 should be no need to manually bind the gauge.  
+[Helios Apache Interface - First Look video](https://youtu.be/d1wWuct7lRg)
+
+![Screenshot 2022-06-01 144235](https://user-images.githubusercontent.com/18526232/171424407-a1746dcd-29e1-44fc-a44f-f54a34dde355.jpg)
