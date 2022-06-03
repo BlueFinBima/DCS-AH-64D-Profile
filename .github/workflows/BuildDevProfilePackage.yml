@@ -78,4 +78,5 @@ jobs:
         with:
           name: ${{ env.VEHICLECOMMONNAME }} helios16 development package
           path: "output/${{ env.VEHICLE }} Dev V${{ steps.bump_tag.outputs.tag }}.helios16"
+          retention-days: 1
 
