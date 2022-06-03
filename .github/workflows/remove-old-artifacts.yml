@@ -10,8 +10,6 @@ jobs:
     steps:
     - name: Remove old artifacts
       uses: c-hive/gha-remove-artifacts@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         age: '60 seconds' # '<number> <unit>', e.g. 5 days, 2 years, 90 seconds, parsed by Moment.js
         # Optional inputs
@@ -20,5 +18,5 @@ jobs:
     - name:  Purge Artifacts
       uses: kolpav/purge-artifacts-action@v1
       with:
-          token: $
-          expire-in: 0days # Set this to 0 to delete all artifacts
+        token: $
+        expire-in: 0days # Set this to 0 to delete all artifacts
