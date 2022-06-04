@@ -8,9 +8,9 @@ name: CreateHelios16
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, master ]
+    branches: [ main, master, dev ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, dev ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -19,7 +19,6 @@ env:
   VEHICLECOMMONNAME: AH-64D Apache
   MINHELIOSRELEASE: 1.6.5300.0000
   PROFILENAME: Apache
-
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,7 +35,14 @@ jobs:
           fetch-depth: '0'
       - name: Set outputs
         id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        run: |
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+          echo "github.ref = ${{github.ref}}"
+          if [ ${{ github.ref }} == "refs/heads/dev" ]; then
+            echo "::set-output name=HELIOSBUILDTYPE::Dev"
+          else
+            echo "::set-output name=HELIOSBUILDTYPE::"
+          fi
       - name: Bump version and push 
         id: bump_tag
         uses: anothrNick/github-tag-action@1.36.0
@@ -51,10 +57,10 @@ jobs:
           echo ${{ env.VEHICLE }} - ${{ env.VEHICLECOMMONNAME }}
           echo "Commit SHA (short) - " ${{ steps.vars.outputs.sha_short }}
           echo "New Release - V " ${{ steps.bump_tag.outputs.tag }}
-      - run: |
+      - name: Text Substitutions ( All Branches )
+        run: |
           mkdir -p output
-          echo Substituting info in the Profile16.json manifest
-          sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
+          echo Substituting general info in the Profile16.json manifest and the profile
           sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
           sed -i -- 's/_ProfileVersionNumber/'"V${{ steps.bump_tag.outputs.tag }}"'/g' Profile16.json
           sed -i -- 's/_Vehicle/'"${{ env.VEHICLE }}"'/g' Profile16.json
@@ -64,16 +70,29 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
-          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
-
-      # create a zip file using the runners shell
-      - name: Package Files
+      - name: Text Substitutions ( Prod )
+        if: github.ref != 'refs/heads/dev'     
         run: |
-          # mv ./${{ env.VEHICLE }}/Helios .
-          zip -r output/${{ env.VEHICLE }} V${{ steps.bump_tag.outputs.tag }}.helios16 ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios/Profiles/*.hply"
+          echo Substituting prod build info in the Profile16.json manifest
+          sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+      - name: Text Substitutions ( Dev )
+        if: github.ref == 'refs/heads/dev'     
+        run: |
+          echo Substituting dev build info in the Profile16.json manifest
+          sed -i -- 's/_MinimumReleaseLevel/1.6.1000.0000/g' Profile16.json
+          sed -i -- 's#Helios/#HeliosDev/#g' Profile16.json
+          sed -i -- 's#_ProfileVersionNumber#'"DEV ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+      - name: Rename Directory for development
+        if: github.ref == 'refs/heads/dev'     
+        run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}
+      # create a zip file using the runners shell
+      - name: Package files
+        run: zip -r "output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.VEHICLECOMMONNAME }} helios16 package
-          path: output/${{ env.VEHICLE }} V${{ steps.bump_tag.outputs.tag }}.helios16
+          name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }}package
+          path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16
           retention-days: 1
 

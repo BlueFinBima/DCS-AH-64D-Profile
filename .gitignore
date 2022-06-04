@@ -3,3 +3,4 @@ AH-64D_BLK_II/Helios/Profiles/Apache.bak
 AH-64D_BLK_II/Helios/Profiles/Apache.hply
 *.hply
 *.bak
+.github/workflows/BuildProfilePackageOld.yml
