@@ -185,7 +185,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Test Toggle Switch" SnapTarget="True" Locked="False">
-                  <Location>168,133</Location>
+                  <Location>168,135</Location>
                   <Size>41,82</Size>
                   <Rotation>CCW</Rotation>
                   <Hidden>False</Hidden>
@@ -199,15 +199,15 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Primary Pushbutton" SnapTarget="True" Locked="False">
-                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
-                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F033AE00</OnTextColor>
-                  <Location>90,133</Location>
+                  <Location>91,133</Location>
                   <Size>44,40</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
-                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
                   <Text>
                     <Color>#2033AE00</Color>
                     <Font>
@@ -248,15 +248,15 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Reserve Pushbutton" SnapTarget="True" Locked="False">
-                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
-                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F033AE00</OnTextColor>
                   <Location>284,133</Location>
                   <Size>44,40</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
-                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
                   <Text>
                     <Color>#2033AE00</Color>
                     <Font>
@@ -294,6 +294,210 @@
                     <OnTextColor>#F033AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Engine 1 Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>75,56</Location>
+                  <Size>44,40</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="APU Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>187,56</Location>
+                  <Size>44,40</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Engine 2 Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>299,56</Location>
+                  <Size>44,40</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>10.08</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Engine 1 Guard" SnapTarget="True" Locked="False">
+                  <Location>59,1</Location>
+                  <Size>74,116</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="APU Guard" SnapTarget="True" Locked="False">
+                  <Location>172,1</Location>
+                  <Size>74,116</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Engine 2 Guard" SnapTarget="True" Locked="False">
+                  <Location>284,1</Location>
+                  <Size>74,116</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
                   <Children />
                 </Control>
               </Children>
@@ -697,27 +901,6 @@
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.GuardCover" Name="Guard Cover" SnapTarget="True" Locked="False">
-                  <Location>35,34</Location>
-                  <Size>41,127</Size>
-                  <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
-                  <Orientation>Vertical</Orientation>
-                  <ClickType>Swipe</ClickType>
-                  <GuardUp>
-                    <Image>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Up.png</Image>
-                    <ActiveRegion>0,0,41,61</ActiveRegion>
-                  </GuardUp>
-                  <GuardDown>
-                    <Image>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Down.png</Image>
-                    <ActiveRegion>0,36,41,86</ActiveRegion>
-                  </GuardDown>
-                  <ProtectedDevice>
-                    <ActiveRegion>0,62,41,24</ActiveRegion>
-                  </ProtectedDevice>
-                  <DefaultGuardPosition>Down</DefaultGuardPosition>
-                  <Children />
-                </Control>
               </Children>
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Backup Panel" SnapTarget="True" Locked="False">
@@ -936,8 +1119,8 @@
                   </Background>
                   <Interaction>
                     <AllowInteractionFull>False</AllowInteractionFull>
-                    <AllowInteractionNone>False</AllowInteractionNone>
-                    <AllowInteractionLegacy>True</AllowInteractionLegacy>
+                    <AllowInteractionNone>True</AllowInteractionNone>
+                    <AllowInteractionLegacy>False</AllowInteractionLegacy>
                   </Interaction>
                   <Children />
                 </Control>
@@ -956,15 +1139,15 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Primary Pushbutton" SnapTarget="True" Locked="False">
-                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
-                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F033AE00</OnTextColor>
                   <Location>107,164</Location>
                   <Size>56,48</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
-                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
                   <Text>
                     <Color>#2033AE00</Color>
                     <Font>
@@ -1005,15 +1188,15 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Discharge Reserve Pushbutton" SnapTarget="True" Locked="False">
-                  <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
-                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on-pushed.png</PushedIndicatorOnImage>
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F033AE00</OnTextColor>
                   <Location>339,164</Location>
                   <Size>56,48</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
-                  <PushedImage>{Helios}/Images/Indicators/caution-indicator-off-pushed.png</PushedImage>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
                   <Text>
                     <Color>#2033AE00</Color>
                     <Font>
@@ -1053,29 +1236,205 @@
                   </AdditionalText>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Guard Empty" SnapTarget="True" Locked="False">
-                  <GuardUp>
-                    <Image>AH-64D_blk_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</Image>
-                    <ActiveRegion>0,0,92,69</ActiveRegion>
-                  </GuardUp>
-                  <GuardDown>
-                    <Image>AH-64D_blk_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</Image>
-                    <ActiveRegion>0,41,92,98</ActiveRegion>
-                  </GuardDown>
-                  <ProtectedDevice>
-                    <ActiveRegion>0,0,0,0</ActiveRegion>
-                  </ProtectedDevice>
-                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Engine 1 Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>91,69</Location>
+                  <Size>52,52</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Engine 1 Guard" SnapTarget="True" Locked="False">
+                  <Location>72,6</Location>
+                  <Size>85,130</Size>
+                  <Hidden>False</Hidden>
                   <SwitchType>OnOn</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <GuardUp>
-                    <PositionOneImage>AH-64D_blk_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
-                    <PositionTwoImage />
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
                   </GuardUp>
                   <GuardDown>
-                    <PositionOneImage />
-                    <PositionTwoImage>AH-64D_blk_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="APU Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>224,69</Location>
+                  <Size>52,52</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="APU Guard" SnapTarget="True" Locked="False">
+                  <Location>206,6</Location>
+                  <Size>85,130</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Engine 2 Pushbutton" SnapTarget="True" Locked="False">
+                  <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
+                  <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
+                  <OnTextColor>#F0F67A00</OnTextColor>
+                  <Location>359,69</Location>
+                  <Size>52,52</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Indicators/indicator.png</Image>
+                  <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
+                  <Text>
+                    <Color>#20F67A00</Color>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Top</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0.2</Top>
+                        <Right>0</Right>
+                        <Bottom>0</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>FIRE</Text>
+                  </Text>
+                  <AdditionalText>
+                    <Font>
+                      <FontFamily>Franklin Gothic</FontFamily>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <FontSize>12.48</FontSize>
+                      <HorizontalAlignment>Center</HorizontalAlignment>
+                      <VerticalAlignment>Bottom</VerticalAlignment>
+                      <Padding>
+                        <Left>0</Left>
+                        <Top>0</Top>
+                        <Right>0</Right>
+                        <Bottom>0.2</Bottom>
+                      </Padding>
+                    </Font>
+                    <Text>READY</Text>
+                    <OnTextColor>#F034AE00</OnTextColor>
+                    <OffTextColor>#2034AE00</OffTextColor>
+                  </AdditionalText>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Engine 2 Guard" SnapTarget="True" Locked="False">
+                  <Location>340,6</Location>
+                  <Size>85,130</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Fire_Panel\Fire_Cover_Down.png</PositionTwoImage>
                   </GuardDown>
                   <DefaultPosition>Two</DefaultPosition>
                   <DefaultGuardPosition>Down</DefaultGuardPosition>
@@ -1644,11 +2003,6 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Cockpit Lights (Pilot).Master Caution Button.changed" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Warnings Panel Pilot.Master Caution;Helios.Base.IndicatorPushButton;Master Caution" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).Master Zeroize Switch Cover.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="set.guard position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -3784,6 +4138,126 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Keyboard Unit (CP/G).Scratchpad.changed" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Small KU CPG Panel.Keyboard Unit (CP/G).Keyboard Unit (CP/G)_Scratchpad;Helios.Base.TextDisplay;Keyboard Unit (CP/G)_Scratchpad" Name="Keyboard Unit (CP/G)_Scratchpad.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 1 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Guard;Helios.Base.GuardedSwitch;Engine 1 Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Guard;Helios.Base.GuardedSwitch;APU Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 2 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Guard;Helios.Base.GuardedSwitch;Engine 2 Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 1 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng1 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng1 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng2 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).Eng2 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).ENG 2 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).APU Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).ENG 1 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).ENG 1 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Guard;Helios.Base.GuardedSwitch;Engine 1 Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).APU Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Guard;Helios.Base.GuardedSwitch;APU Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).ENG 2 Button Cover.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Guard;Helios.Base.GuardedSwitch;Engine 2 Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).ENG 2 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).ENG 1 Fire Pushbutton.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).Eng1 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).Eng1 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).APU Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).APU Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).Eng2 Ready Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.additional indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).Eng2 Fire Indicator.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="set.indicator" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -6187,6 +6661,51 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).push.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).release.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).push.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).release.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).push.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).release.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 1 Guard;Helios.Base.GuardedSwitch;Engine 1 Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).set.ENG 1 Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.APU Guard;Helios.Base.GuardedSwitch;APU Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).set.APU Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Fire Panel CPG.Engine 2 Guard;Helios.Base.GuardedSwitch;Engine 2 Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (CP/G).set.ENG 2 Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Armament Panel CPG.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="pushed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (CP/G).push.Master Arm" />
       <StaticValue />
@@ -6269,11 +6788,6 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Guard Cover;Helios.Base.GuardCover;Guard Cover" Name="guard position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch Cover" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8595,6 +9109,51 @@
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Discharge Reserve Pushbutton;Helios.Base.DualIndicatorPushButton;Discharge Reserve Pushbutton" Name="released" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.Reserve Extinguisher button" />
       <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 1 Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.ENG 1 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 1 Guard;Helios.Base.GuardedSwitch;Engine 1 Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.ENG 1 Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Pushbutton;Helios.Base.DualIndicatorPushButton;APU Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.APU Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.APU Guard;Helios.Base.GuardedSwitch;APU Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.APU Button Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).push.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Pushbutton;Helios.Base.DualIndicatorPushButton;Engine 2 Pushbutton" Name="released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).release.ENG 2 Fire Pushbutton" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Fire Panel Pilot.Engine 2 Guard;Helios.Base.GuardedSwitch;Engine 2 Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Fire Panel (Pilot).set.ENG 2 Button Cover" />
+      <TriggerValue />
     </Binding>
   </Bindings>
 </HeliosProfile>
