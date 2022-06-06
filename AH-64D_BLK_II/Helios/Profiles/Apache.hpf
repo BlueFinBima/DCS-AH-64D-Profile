@@ -339,7 +339,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -388,7 +388,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -437,7 +437,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -901,6 +901,25 @@
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Master Zeroize Guard" SnapTarget="True" Locked="False">
+                  <Location>34,30</Location>
+                  <Size>42,131</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
               </Children>
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Backup Panel" SnapTarget="True" Locked="False">
@@ -1240,7 +1259,7 @@
                   <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
                   <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F0F67A00</OnTextColor>
-                  <Location>91,69</Location>
+                  <Location>18,69</Location>
                   <Size>52,52</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
@@ -1279,7 +1298,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -1347,7 +1366,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -1415,7 +1434,7 @@
                         <Bottom>0.2</Bottom>
                       </Padding>
                     </Font>
-                    <Text>READY</Text>
+                    <Text>RDY</Text>
                     <OnTextColor>#F034AE00</OnTextColor>
                     <OffTextColor>#2034AE00</OffTextColor>
                   </AdditionalText>
@@ -4261,6 +4280,11 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).Master Zeroize Switch Cover.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
       <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
       <StaticValue />
@@ -6788,6 +6812,11 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (Pilot).set.Master Zeroize Switch Cover" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
