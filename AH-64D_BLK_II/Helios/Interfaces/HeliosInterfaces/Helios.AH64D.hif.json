@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5200.0003",
+  "version": "1.6.5300.0000",
   "commit": "",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
@@ -2268,37 +2268,6 @@
           "pushValue": "1.0",
           "releaseId": "3029",
           "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Electrical",
-      "name": "Master Ignition Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "315"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3003"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "Batt",
-          "actionID": "3003"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "External Power",
-          "actionID": "3003"
         }
       ]
     },
@@ -5936,6 +5905,52 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Left Console (CP/G)",
+      "name": "Left Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "628"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3033"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Left Console (CP/G)",
+      "name": "Right Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "629"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3034"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Left Console (Pilot)",
       "name": "Tail Wheel Unlocked Pushbutton",
@@ -5994,19 +6009,50 @@
       "deviceId": "75",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "BRK",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.5",
-          "name": "Lock",
+          "name": "Brake",
           "actionID": "3001"
         },
         {
+          "argumentValue": "1.0",
+          "name": "Lock",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Left Console (Pilot)",
+      "name": "Master Ignition Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "315"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionID": "3001"
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Batt",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "External Power",
+          "actionID": "3003"
         }
       ]
     },
@@ -6237,6 +6283,52 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Left Console (Pilot)",
+      "name": "Left Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "398"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3031"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Left Console (Pilot)",
+      "name": "Right Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "399"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3032"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Left Console (Pilot)",
       "name": "APU Start Button",
@@ -6382,6 +6474,29 @@
           "id": "412"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Left Console (Pilot)",
+      "name": "Lever Friction Adjustment",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "633"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3001"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.PushButton",

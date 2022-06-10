@@ -4537,6 +4537,11 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Master Ignition Switch.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel.Master Ignition Switch;Helios.Base.RotarySwitch;Master Ignition Switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
       <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
       <StaticValue />
@@ -9464,6 +9469,11 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Rotor Brake Switch;Helios.Base.ThreeWayToggleSwitch;Rotor Brake Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Rotor Brake Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Master Ignition Switch;Helios.Base.RotarySwitch;Master Ignition Switch" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Master Ignition Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
