@@ -1259,7 +1259,7 @@
                   <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
                   <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
                   <OnTextColor>#F0F67A00</OnTextColor>
-                  <Location>18,69</Location>
+                  <Location>89,69</Location>
                   <Size>52,52</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
@@ -1461,9 +1461,36 @@
                 </Control>
               </Children>
             </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Maximize Power Panel Button" SnapTarget="True" Locked="False">
+              <Location>0,837</Location>
+              <Size>50,50</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
+              <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+              <Text>
+                <Color>#E0EAEAEA</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>20</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>POW</Text>
+              </Text>
+              <Children />
+            </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Power Panel" SnapTarget="True" Locked="False">
               <Location>0,439</Location>
-              <Size>341,540</Size>
+              <Size>334,540</Size>
               <Hidden>True</Hidden>
               <Background />
               <Interaction>
@@ -1530,8 +1557,8 @@
                   <DefaultGuardPosition>Down</DefaultGuardPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Start Switch 1" SnapTarget="True" Locked="False">
-                  <Location>29,354</Location>
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Start Switch 2" SnapTarget="True" Locked="False">
+                  <Location>95,354</Location>
                   <Size>36,72</Size>
                   <Hidden>False</Hidden>
                   <SwitchType>OnOnOn</SwitchType>
@@ -1543,8 +1570,8 @@
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Start Switch 2" SnapTarget="True" Locked="False">
-                  <Location>95,354</Location>
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Start Switch 1" SnapTarget="True" Locked="False">
+                  <Location>29,354</Location>
                   <Size>36,72</Size>
                   <Hidden>False</Hidden>
                   <SwitchType>OnOnOn</SwitchType>
@@ -1583,8 +1610,8 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="Friction Lever" SnapTarget="True" Locked="False">
-                  <Location>236,177</Location>
-                  <Size>44,150</Size>
+                  <Location>235,177</Location>
+                  <Size>46,150</Size>
                   <Hidden>False</Hidden>
                   <AnimationFrameImageNamePattern>AH-64D_blk_II\BlueFinBima\Power\Friction_Lever_0.png</AnimationFrameImageNamePattern>
                   <InitialValue>0</InitialValue>
@@ -1599,8 +1626,8 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="Left Power Lever" SnapTarget="True" Locked="False">
-                  <Location>54,0</Location>
-                  <Size>140,540</Size>
+                  <Location>58,0</Location>
+                  <Size>135,540</Size>
                   <Hidden>False</Hidden>
                   <AnimationFrameImageNamePattern>AH-64D_BLK_II\BlueFinBima\Power\Left_Power_Lever_0.png</AnimationFrameImageNamePattern>
                   <InitialValue>0</InitialValue>
@@ -1616,7 +1643,7 @@
                 </Control>
                 <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="Right Power Lever" SnapTarget="True" Locked="False">
                   <Location>201,0</Location>
-                  <Size>140,540</Size>
+                  <Size>133,540</Size>
                   <Hidden>False</Hidden>
                   <AnimationFrameImageNamePattern>AH-64D_BLK_II\BlueFinBima\Power\Right_Power_Lever_0.png</AnimationFrameImageNamePattern>
                   <InitialValue>0</InitialValue>
@@ -1640,33 +1667,6 @@
                   <Children />
                 </Control>
               </Children>
-            </Control>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Maximize Power Panel Button" SnapTarget="True" Locked="False">
-              <Location>0,837</Location>
-              <Size>50,50</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-              <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
-              <Text>
-                <Color>#E0EAEAEA</Color>
-                <Font>
-                  <FontFamily>Franklin Gothic</FontFamily>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <FontSize>20</FontSize>
-                  <HorizontalAlignment>Center</HorizontalAlignment>
-                  <VerticalAlignment>Center</VerticalAlignment>
-                  <Padding>
-                    <Left>0</Left>
-                    <Top>0</Top>
-                    <Right>0</Right>
-                    <Bottom>0</Bottom>
-                  </Padding>
-                </Font>
-                <Text>POW</Text>
-              </Text>
-              <Children />
             </Control>
           </Children>
         </Control>
@@ -4522,22 +4522,7 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Left Power Lever.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerAnimated;Left Power Lever" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Right Power Lever.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerAnimated;Right Power Lever" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Lever Friction Adjustment.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel.Friction Lever;Helios.Base.LinearPotentiometerAnimated;Friction Lever" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).Master Ignition Switch.changed" />
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Electrical.Master Ignition Switch.changed" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel.Master Ignition Switch;Helios.Base.RotarySwitch;Master Ignition Switch" Name="set.position" />
       <TriggerValue />
     </Binding>
@@ -9442,6 +9427,16 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel;Helios.Panel;Power Panel" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.APU Push Button;Helios.Base.IndicatorPushButton;APU Push Button" Name="pushed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).push.APU Start Button" />
       <StaticValue />
@@ -9457,13 +9452,13 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Start Switch 1;Helios.Base.ThreeWayToggleSwitch;Start Switch 1" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.No.1 Engine Start Switch" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Start Switch 2;Helios.Base.ThreeWayToggleSwitch;Start Switch 2" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.No.2 Engine Start Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Start Switch 2;Helios.Base.ThreeWayToggleSwitch;Start Switch 2" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.No.2 Engine Start Switch" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Start Switch 1;Helios.Base.ThreeWayToggleSwitch;Start Switch 1" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.No.1 Engine Start Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9473,22 +9468,7 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Master Ignition Switch;Helios.Base.RotarySwitch;Master Ignition Switch" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Master Ignition Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Friction Lever;Helios.Base.LinearPotentiometerAnimated;Friction Lever" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Lever Friction Adjustment" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerAnimated;Left Power Lever" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Left Power Lever" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerAnimated;Right Power Lever" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Left Console (Pilot).set.Right Power Lever" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Electrical.set.Master Ignition Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9500,16 +9480,6 @@
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Power Panel.Minimize Pilot Power Panel;Helios.Base.PushButton;Minimize Pilot Power Panel" Name="released" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="set.hidden" />
       <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="released" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Power Panel;Helios.Panel;Power Panel" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="released" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Power Panel Button;Helios.Base.PushButton;Maximize Power Panel Button" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
     </Binding>
   </Bindings>
 </HeliosProfile>
