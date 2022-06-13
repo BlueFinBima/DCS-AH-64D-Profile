@@ -1,4 +1,4 @@
-[![AH-64D Apache Profile](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml/badge.svg)](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml) [![CreateDevelopmentHelios16](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildDevProfilePackage.yml/badge.svg)](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildDevProfilePackage.yml)
+[![AH-64D Apache Profile](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml/badge.svg)](https://github.com/BlueFinBima/DCS-AH-64D-Profile/actions/workflows/BuildProfilePackage.yml)
 # DCS-AH-64D-Profile
 This is a Helios profile for the DCS AH-64D Apache.  It is intended to be used with the
 dedicated Helios interfance shipped with 1.6.5300.x.  As such, it makes use of specific
