@@ -77,12 +77,14 @@ jobs:
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
       - name: Text Substitutions ( Dev )
-        if: github.ref == 'refs/heads/dev'     
+        if: github.ref == 'refs/heads/dev'
         run: |
           echo Substituting dev build info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/1.6.1000.0000/g' Profile16.json
           sed -i -- 's#Helios/#HeliosDev/#g' Profile16.json
-          sed -i -- 's#_ProfileVersionNumber#DEV ${{ steps.bump_tag.outputs.tag}:0:5}#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          smallTag=$(echo ${{ steps.bump_tag.outputs.tag }} | cut -c1-5)
+          echo 'DEV '$smallTag
+          sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
       - name: Rename Directory for development
         if: github.ref == 'refs/heads/dev'     
