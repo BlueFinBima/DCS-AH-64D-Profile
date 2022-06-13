@@ -82,7 +82,7 @@ jobs:
           echo Substituting dev build info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/1.6.1000.0000/g' Profile16.json
           sed -i -- 's#Helios/#HeliosDev/#g' Profile16.json
-          sed -i -- 's#_ProfileVersionNumber#DEV ${{ steps.bump_tag.outputs.tag:0:5}}#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#DEV ${{ steps.bump_tag.outputs.tag}:0:5}#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
       - name: Rename Directory for development
         if: github.ref == 'refs/heads/dev'     
