@@ -70,6 +70,11 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
+          fnStub=$(echo ${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/$GITHUB_ACTOR/${{ env.PROFILENAME }})
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}.iris
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Pilot.iris
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_CPG.iris
+
       - name: Text Substitutions ( Prod )
         if: github.ref != 'refs/heads/dev'     
         run: |
