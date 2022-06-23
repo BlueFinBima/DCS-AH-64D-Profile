@@ -1224,12 +1224,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -1903,12 +1903,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
