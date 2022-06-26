@@ -1480,8 +1480,8 @@
                   <SwitchType>OnOn</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
-                  <PositionOneImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_In.png</PositionOneImage>
-                  <PositionTwoImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_Out.png</PositionTwoImage>
+                  <PositionOneImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_Out.png</PositionOneImage>
+                  <PositionTwoImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_In.png</PositionTwoImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
