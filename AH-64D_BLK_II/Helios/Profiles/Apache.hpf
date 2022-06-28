@@ -1362,8 +1362,8 @@
                   <Hidden>False</Hidden>
                   <KnobImage>AH-64D_blk_II\BlueFinBima\Altimeter\Altimeter_Knob.png</KnobImage>
                   <RotationStep>5</RotationStep>
-                  <StepValue>0.05</StepValue>
-                  <InitialRotation>0</InitialRotation>
+                  <StepValue>0.1</StepValue>
+                  <InitialRotation>57.8045932269366</InitialRotation>
                   <Children />
                 </Control>
               </Children>
@@ -1388,20 +1388,6 @@
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="Wipers Knob" SnapTarget="True" Locked="False">
-                  <Location>224,160</Location>
-                  <Size>96,96</Size>
-                  <Hidden>False</Hidden>
-                  <KnobImage>{AV-8B}/Images/Defog Rotary.png</KnobImage>
-                  <Positions>
-                    <Position Name="Park" Rotation="316.709391750175" />
-                    <Position Name="Off" Rotation="0" />
-                    <Position Name="Lo" Rotation="46.1430901887672" />
-                    <Position Name="Hi" Rotation="90.1887671871359" />
-                  </Positions>
-                  <DefaultPosition>2</DefaultPosition>
-                  <Children />
-                </Control>
                 <Control TypeIdentifier="Helios.Base.PushButton" Name="Defog Button" SnapTarget="True" Locked="False">
                   <Location>100,199</Location>
                   <Size>30,30</Size>
@@ -1411,9 +1397,24 @@
                   <PushedImage>{Helios}/Images/Buttons/tactile-light-round-in.png</PushedImage>
                   <Children />
                 </Control>
+                <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="Wipers Knob" SnapTarget="True" Locked="False">
+                  <Location>225,166</Location>
+                  <Size>96,96</Size>
+                  <Hidden>False</Hidden>
+                  <KnobImage>{AV-8B}/Images/Defog Rotary.png</KnobImage>
+                  <Positions>
+                    <Position Name="Park" Rotation="316.709391750175" />
+                    <Position Name="Off" Rotation="0" />
+                    <Position Name="Lo" Rotation="46.1430901887677" />
+                    <Position Name="Hi" Rotation="90.1887671871359" />
+                  </Positions>
+                  <DefaultPosition>2</DefaultPosition>
+                  <Children />
+                </Control>
                 <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Generator Reset Toggle" SnapTarget="True" Locked="False">
-                  <Location>167,22</Location>
+                  <Location>261,45</Location>
                   <Size>44,88</Size>
+                  <Rotation>CW</Rotation>
                   <Hidden>False</Hidden>
                   <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
@@ -1425,9 +1426,8 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Overspeed Check B Toggle" SnapTarget="True" Locked="False">
-                  <Location>261,45</Location>
+                  <Location>167,22</Location>
                   <Size>44,88</Size>
-                  <Rotation>CW</Rotation>
                   <Hidden>False</Hidden>
                   <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
@@ -1482,7 +1482,7 @@
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_Out.png</PositionOneImage>
                   <PositionTwoImage>AH-64D_blk_II\BlueFinBima\Front_Panel\Brake_In.png</PositionTwoImage>
-                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultPosition>One</DefaultPosition>
                   <Children />
                 </Control>
               </Children>
@@ -5821,13 +5821,8 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Generator Reset.CKT B Check Overspeed Test.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Overspeed Check B Toggle;Helios.Base.ThreeWayToggleSwitch;Overspeed Check B Toggle" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Generator Reset.Generator Reset Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Generator Reset Toggle;Helios.Base.ThreeWayToggleSwitch;Generator Reset Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Overspeed Check B Toggle;Helios.Base.ThreeWayToggleSwitch;Overspeed Check B Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8066,11 +8061,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Wipers Knob;Helios.Base.RotarySwitch;Wipers Knob" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Windshield Panel (Pilot).set.Wiper Control Switch, PARK/OFF/LO/HI" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Defog Button;Helios.Base.PushButton;Defog Button" Name="pushed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Windshield Panel (Pilot).push.Defog Button" />
       <StaticValue />
@@ -8079,6 +8069,11 @@
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Defog Button;Helios.Base.PushButton;Defog Button" Name="released" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Windshield Panel (Pilot).release.Defog Button" />
       <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Wipers Knob;Helios.Base.RotarySwitch;Wipers Knob" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Windshield Panel (Pilot).set.Wiper Control Switch, PARK/OFF/LO/HI" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Windshield Panel.Generator Reset Toggle;Helios.Base.ThreeWayToggleSwitch;Generator Reset Toggle" Name="position.changed" />
