@@ -1389,7 +1389,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.PushButton" Name="Defog Button" SnapTarget="True" Locked="False">
-                  <Location>100,199</Location>
+                  <Location>101,200</Location>
                   <Size>30,30</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
