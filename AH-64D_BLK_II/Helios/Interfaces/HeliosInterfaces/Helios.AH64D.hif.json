@@ -1045,18 +1045,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3013"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3013"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3013"
+          "actionID": "3070"
         }
       ]
     },
@@ -1076,18 +1076,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3014"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3014"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3014"
+          "actionID": "3071"
         }
       ]
     },
@@ -1107,18 +1107,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3015"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3015"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3015"
+          "actionID": "3072"
         }
       ]
     },
@@ -1138,18 +1138,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3016"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3016"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3016"
+          "actionID": "3073"
         }
       ]
     },
@@ -1169,18 +1169,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3017"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3017"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3017"
+          "actionID": "3074"
         }
       ]
     },
@@ -1250,12 +1250,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -1754,13 +1754,13 @@
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3013"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3013"
+          "actionID": "3070"
         }
       ]
     },
@@ -1780,18 +1780,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3014"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3014"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3014"
+          "actionID": "3071"
         }
       ]
     },
@@ -1811,18 +1811,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3015"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3015"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3015"
+          "actionID": "3072"
         }
       ]
     },
@@ -1842,18 +1842,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3016"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3016"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3016"
+          "actionID": "3073"
         }
       ]
     },
@@ -1873,18 +1873,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3017"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3017"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3017"
+          "actionID": "3074"
         }
       ]
     },
@@ -1954,12 +1954,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }

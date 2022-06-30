@@ -5785,7 +5785,7 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).ADF Volume Control Knob.changed" />
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).ADF Volume Control Knob.changed" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.ADF Volume Potentiometer;Helios.Base.Potentiometer;ADF Volume Potentiometer" Name="set.value" />
       <TriggerValue />
     </Binding>
@@ -7906,102 +7906,102 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.ADF Volume Potentiometer;Helios.Base.Potentiometer;ADF Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.ADF Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.ADF Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.VCR Volume Potentiometer;Helios.Base.Potentiometer;VCR Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.VCR Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.VCR Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.ATA Volume Potentiometer;Helios.Base.Potentiometer;ATA Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.ATA Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.ATA Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.RLWR Volume Potentiometer;Helios.Base.Potentiometer;RLWR Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.RLWR Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.RLWR Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.IFF Volume Potentiometer;Helios.Base.Potentiometer;IFF Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.IFF Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.IFF Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Ident Button;Helios.Base.PushButton;Ident Button" Name="pushed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).push.IDENT Button" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).push.IDENT Button" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Ident Button;Helios.Base.PushButton;Ident Button" Name="released" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).release.IDENT Button" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).release.IDENT Button" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.ICS Mode Toggle;Helios.Base.ThreeWayToggleSwitch;ICS Mode Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.ICS Mode Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.ICS Mode Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Sensitivity Potentiometer;Helios.Base.Potentiometer;Sensitivity Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.SENS Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.SENS Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Master Potentiometer;Helios.Base.Potentiometer;Master Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.MASTER Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.MASTER Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch HF Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.HF Squelch Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.HF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM2 Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM2 Squelch Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.FM2 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM1 Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM1 Squelch Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.FM1 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch UHF Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.UHF Squelch Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.UHF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch VHF Toggle" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.VHF Squelch Switch" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.VHF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.HF Volume Potentiometer;Helios.Base.Potentiometer;HF Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.HF Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.HF Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.FM2 Volume Potentiometer;Helios.Base.Potentiometer;FM2 Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM2 Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.FM2 Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.FM1 Volume Potentiometer;Helios.Base.Potentiometer;FM1 Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM1 Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.FM1 Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.UHF Volume Potentiometer;Helios.Base.Potentiometer;UHF Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.UHF Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.UHF Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.VHF Volume Potentiometer;Helios.Base.Potentiometer;VHF Volume Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.VHF Volume Control Knob" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).set.VHF Volume Control Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
