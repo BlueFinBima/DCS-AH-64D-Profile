@@ -1052,6 +1052,11 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3013"
         }
       ]
     },
@@ -1077,6 +1082,11 @@
         {
           "argumentValue": "0.0",
           "name": "Off",
+          "actionID": "3014"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
           "actionID": "3014"
         }
       ]
@@ -1104,6 +1114,11 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3015"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3015"
         }
       ]
     },
@@ -1130,6 +1145,11 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3016"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3016"
         }
       ]
     },
@@ -1155,6 +1175,11 @@
         {
           "argumentValue": "0.0",
           "name": "Off",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
           "actionID": "3017"
         }
       ]
@@ -1225,12 +1250,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.5",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -1724,12 +1749,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3013"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
           "actionID": "3013"
         }
       ]
@@ -1757,6 +1787,11 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3014"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3014"
         }
       ]
     },
@@ -1782,6 +1817,11 @@
         {
           "argumentValue": "0.0",
           "name": "Off",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
           "actionID": "3015"
         }
       ]
@@ -1809,6 +1849,11 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3016"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3016"
         }
       ]
     },
@@ -1834,6 +1879,11 @@
         {
           "argumentValue": "0.0",
           "name": "Off",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
           "actionID": "3017"
         }
       ]
@@ -1904,12 +1954,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.5",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "PTT",
           "actionID": "3018"
         }

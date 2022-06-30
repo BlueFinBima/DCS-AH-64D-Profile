@@ -837,63 +837,68 @@
                   <RotationTravel>301.709844559585</RotationTravel>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch HF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch HF Toggle" SnapTarget="True" Locked="False">
                   <Location>321,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch FM2 Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch FM2 Toggle" SnapTarget="True" Locked="False">
                   <Location>251,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch FM1 Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch FM1 Toggle" SnapTarget="True" Locked="False">
                   <Location>181,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch UHF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch UHF Toggle" SnapTarget="True" Locked="False">
                   <Location>111,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch VHF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch VHF Toggle" SnapTarget="True" Locked="False">
                   <Location>41,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
@@ -2878,7 +2883,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.Potentiometer" Name="VCR Volume Potentiometer" SnapTarget="True" Locked="False">
-                  <Location>250,315</Location>
+                  <Location>247,315</Location>
                   <Size>50,50</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Common Knob.png</KnobImage>
@@ -2891,7 +2896,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.Potentiometer" Name="ATA Volume Potentiometer" SnapTarget="True" Locked="False">
-                  <Location>177,315</Location>
+                  <Location>176,315</Location>
                   <Size>50,50</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Common Knob.png</KnobImage>
@@ -2904,7 +2909,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.Potentiometer" Name="RLWR Volume Potentiometer" SnapTarget="True" Locked="False">
-                  <Location>107,315</Location>
+                  <Location>106,315</Location>
                   <Size>50,50</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Common Knob.png</KnobImage>
@@ -2917,7 +2922,7 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.Potentiometer" Name="IFF Volume Potentiometer" SnapTarget="True" Locked="False">
-                  <Location>37,315</Location>
+                  <Location>34,315</Location>
                   <Size>50,50</Size>
                   <Hidden>False</Hidden>
                   <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Common Knob.png</KnobImage>
@@ -2977,63 +2982,68 @@
                   <RotationTravel>301.709844559585</RotationTravel>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch HF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch HF Toggle" SnapTarget="True" Locked="False">
                   <Location>321,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch FM2 Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch FM2 Toggle" SnapTarget="True" Locked="False">
                   <Location>251,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch FM1 Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch FM1 Toggle" SnapTarget="True" Locked="False">
                   <Location>181,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch UHF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch UHF Toggle" SnapTarget="True" Locked="False">
                   <Location>111,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Squelch VHF Toggle" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Squelch VHF Toggle" SnapTarget="True" Locked="False">
                   <Location>41,110</Location>
                   <Size>40,80</Size>
                   <Hidden>False</Hidden>
-                  <SwitchType>OnOn</SwitchType>
+                  <SwitchType>MomOnMom</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
                   <PositionOneImage>{Helios}/Images/Toggles/orange-up.png</PositionOneImage>
                   <PositionTwoImage>{Helios}/Images/Toggles/orange-norm.png</PositionTwoImage>
+                  <PositionThreeImage>{Helios}/Images/Toggles/orange-down.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
@@ -3103,19 +3113,19 @@
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.PushButton" Name="Minimize Button" SnapTarget="True" Locked="False">
-                  <Location>0,365</Location>
-                  <Size>26,26</Size>
+                  <Location>362,252</Location>
+                  <Size>30,30</Size>
                   <Hidden>False</Hidden>
                   <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+                  <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
                   <Text>
-                    <Color>#80073B00</Color>
+                    <Color>#E0063B00</Color>
                     <Font>
                       <FontFamily>Franklin Gothic</FontFamily>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
-                      <FontSize>16</FontSize>
+                      <FontSize>14</FontSize>
                       <HorizontalAlignment>Center</HorizontalAlignment>
                       <VerticalAlignment>Center</VerticalAlignment>
                       <Padding>
@@ -3125,7 +3135,7 @@
                         <Bottom>0</Bottom>
                       </Padding>
                     </Font>
-                    <Text>H</Text>
+                    <Text>Hide</Text>
                   </Text>
                   <Children />
                 </Control>
@@ -5751,27 +5761,27 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).HF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ToggleSwitch;Squelch HF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch HF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).FM2 Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ToggleSwitch;Squelch FM2 Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM2 Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).FM1 Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ToggleSwitch;Squelch FM1 Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM1 Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).UHF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ToggleSwitch;Squelch UHF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch UHF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).VHF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ToggleSwitch;Squelch VHF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch VHF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -5821,27 +5831,27 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).HF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ToggleSwitch;Squelch HF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch HF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).FM2 Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ToggleSwitch;Squelch FM2 Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM2 Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).FM1 Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ToggleSwitch;Squelch FM1 Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM1 Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).UHF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ToggleSwitch;Squelch UHF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch UHF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (CP/G).VHF Squelch Switch.changed" />
-      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ToggleSwitch;Squelch VHF Toggle" Name="set.position" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch VHF Toggle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7945,27 +7955,27 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ToggleSwitch;Squelch HF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch HF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.HF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ToggleSwitch;Squelch FM2 Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM2 Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM2 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ToggleSwitch;Squelch FM1 Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM1 Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM1 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ToggleSwitch;Squelch UHF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch UHF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.UHF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ToggleSwitch;Squelch VHF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch VHF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.VHF Squelch Switch" />
       <TriggerValue />
     </Binding>
@@ -10325,27 +10335,27 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ToggleSwitch;Squelch HF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch HF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch HF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.HF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ToggleSwitch;Squelch FM2 Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM2 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM2 Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM2 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ToggleSwitch;Squelch FM1 Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch FM1 Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch FM1 Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.FM1 Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ToggleSwitch;Squelch UHF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch UHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch UHF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.UHF Squelch Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ToggleSwitch;Squelch VHF Toggle" Name="position.changed" />
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Squelch VHF Toggle;Helios.Base.ThreeWayToggleSwitch;Squelch VHF Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Communications Panel (Pilot).set.VHF Squelch Switch" />
       <TriggerValue />
     </Binding>
