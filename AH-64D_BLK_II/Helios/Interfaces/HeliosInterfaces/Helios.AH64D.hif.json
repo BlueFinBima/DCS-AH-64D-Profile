@@ -394,6 +394,7 @@
           "actionID": "3001"
         },
         {
+          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Test",
           "actionID": "3002"
@@ -1044,13 +1045,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3013"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3070"
         }
       ]
     },
@@ -1070,13 +1076,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3014"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3014"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3071"
         }
       ]
     },
@@ -1096,13 +1107,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3015"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3015"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3072"
         }
       ]
     },
@@ -1122,13 +1138,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3016"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3016"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3073"
         }
       ]
     },
@@ -1148,13 +1169,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3017"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3017"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3074"
         }
       ]
     },
@@ -1224,12 +1250,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -1723,13 +1749,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3013"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3070"
         }
       ]
     },
@@ -1749,13 +1780,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3014"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3014"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3071"
         }
       ]
     },
@@ -1775,13 +1811,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3015"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3015"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3072"
         }
       ]
     },
@@ -1801,13 +1842,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3016"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3016"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3073"
         }
       ]
     },
@@ -1827,13 +1873,18 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "On",
+          "name": "Up",
           "actionID": "3017"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "Middle",
           "actionID": "3017"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3074"
         }
       ]
     },
@@ -1903,12 +1954,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -3273,12 +3324,12 @@
       "deviceId": "7",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "0.0",
           "name": "Pull",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "1.0",
           "name": "Stow",
           "actionID": "3001"
         }
@@ -3296,27 +3347,22 @@
           "id": "353"
         }
       ],
-      "deviceId": "3",
+      "deviceId": "6",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
-          "name": "Eng 2",
-          "actionID": "3008",
-          "stopActionID": "3008",
-          "stopActionValue": "0.0"
+          "name": "Eng 1",
+          "actionID": "3007"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off"
+          "name": "Off",
+          "actionID": "3008"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
-          "name": "Start",
-          "actionID": "3007",
-          "stopActionID": "3007",
-          "stopActionValue": "0.0"
+          "name": "Eng 2",
+          "actionID": "3008"
         }
       ]
     },
@@ -3332,27 +3378,22 @@
           "id": "354"
         }
       ],
-      "deviceId": "3",
+      "deviceId": "6",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
-          "name": "Eng 2",
-          "actionID": "3010",
-          "stopActionID": "3010",
-          "stopActionValue": "0.0"
+          "name": "Eng 1",
+          "actionID": "3009"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off"
+          "name": "Off",
+          "actionID": "3010"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
-          "name": "Start",
-          "actionID": "3009",
-          "stopActionID": "3009",
-          "stopActionValue": "0.0"
+          "name": "Eng 2",
+          "actionID": "3010"
         }
       ]
     },
@@ -3371,24 +3412,19 @@
       "deviceId": "3",
       "positions": [
         {
-          "exitValue": "0.0",
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Gen 1",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "actionID": "3001"
         },
         {
           "argumentValue": "0.0",
-          "name": "Off"
+          "name": "Off",
+          "actionID": "3001"
         },
         {
-          "exitValue": "0.0",
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Gen 2",
-          "actionID": "3002",
-          "stopActionID": "3002",
-          "stopActionValue": "0.0"
+          "actionID": "3002"
         }
       ]
     },
@@ -11215,8 +11251,10 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "1.0",
       "positions": [
         {
+          "exitValue": "0.1",
           "argumentValue": "0.0",
           "name": "PARK",
           "actionID": "3004"
@@ -11273,8 +11311,10 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "1.0",
       "positions": [
         {
+          "exitValue": "0.1",
           "argumentValue": "0.0",
           "name": "PARK",
           "actionID": "3002"
