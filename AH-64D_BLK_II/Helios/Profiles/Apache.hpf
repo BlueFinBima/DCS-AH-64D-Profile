@@ -13,7 +13,7 @@
         <Control TypeIdentifier="Helios.Panel" Name="CPG Cockpit" SnapTarget="True" Locked="False">
           <Location>0,0</Location>
           <Size>1920,1080</Size>
-          <Hidden>False</Hidden>
+          <Hidden>True</Hidden>
           <Background>
             <Image>AH-64D_BLK_II\BlueFinBima\1080pBackgroundCPG.png</Image>
             <ImageAlignment>Centered</ImageAlignment>
@@ -732,7 +732,7 @@
             <Control TypeIdentifier="Helios.Panel" Name="Right Hand Panel" SnapTarget="True" Locked="False">
               <Location>1517,339</Location>
               <Size>403,683</Size>
-              <Hidden>False</Hidden>
+              <Hidden>True</Hidden>
               <Background>
                 <Color>#80073B00</Color>
               </Background>
