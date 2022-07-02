@@ -11415,13 +11415,13 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="released" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Left Console Panel;Helios.Panel;Left Console Panel" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="released" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.Left Console Panel;Helios.Panel;Left Console Panel" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.ADF Volume Potentiometer;Helios.Base.Potentiometer;ADF Volume Potentiometer" Name="value.changed" />
