@@ -732,7 +732,7 @@
             <Control TypeIdentifier="Helios.Panel" Name="Right Hand Panel" SnapTarget="True" Locked="False">
               <Location>1517,339</Location>
               <Size>403,683</Size>
-              <Hidden>True</Hidden>
+              <Hidden>False</Hidden>
               <Background>
                 <Color>#80073B00</Color>
               </Background>
