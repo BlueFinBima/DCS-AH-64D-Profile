@@ -13,7 +13,7 @@
         <Control TypeIdentifier="Helios.Panel" Name="CPG Cockpit" SnapTarget="True" Locked="False">
           <Location>0,0</Location>
           <Size>1920,1080</Size>
-          <Hidden>True</Hidden>
+          <Hidden>False</Hidden>
           <Background>
             <Image>AH-64D_BLK_II\BlueFinBima\1080pBackgroundCPG.png</Image>
             <ImageAlignment>Centered</ImageAlignment>
@@ -745,7 +745,7 @@
                 <Control TypeIdentifier="Helios.Panel" Name="Comms Panel" SnapTarget="True" Locked="False">
                   <Location>0,5</Location>
                   <Size>403,388</Size>
-                  <Hidden>True</Hidden>
+                  <Hidden>False</Hidden>
                   <Background />
                   <Interaction>
                     <AllowInteractionFull>False</AllowInteractionFull>
@@ -1090,7 +1090,7 @@
                     <Control TypeIdentifier="Helios.Base.DualIndicatorPushButton" Name="Dual Indicator Pushbutton" SnapTarget="True" Locked="False">
                       <IndicatorOnImage>{Helios}/Images/Indicators/indicator.png</IndicatorOnImage>
                       <PushedIndicatorOnImage>{Helios}/Images/Indicators/indicator-push.png</PushedIndicatorOnImage>
-                      <OnTextColor>#F0F67A00</OnTextColor>
+                      <OnTextColor>#F033AE00</OnTextColor>
                       <Location>115,51</Location>
                       <Size>46,46</Size>
                       <Hidden>False</Hidden>
@@ -1098,39 +1098,39 @@
                       <Image>{Helios}/Images/Indicators/indicator.png</Image>
                       <PushedImage>{Helios}/Images/Indicators/indicator-push.png</PushedImage>
                       <Text>
-                        <Color>#20F67A00</Color>
+                        <Color>#2033AE00</Color>
                         <Font>
                           <FontFamily>Franklin Gothic</FontFamily>
                           <FontStyle>Normal</FontStyle>
                           <FontWeight>Normal</FontWeight>
-                          <FontSize>18</FontSize>
+                          <FontSize>14</FontSize>
                           <HorizontalAlignment>Center</HorizontalAlignment>
                           <VerticalAlignment>Top</VerticalAlignment>
                           <Padding>
                             <Left>0</Left>
-                            <Top>0.2</Top>
+                            <Top>0.159430559134244</Top>
                             <Right>0</Right>
-                            <Bottom>0</Bottom>
+                            <Bottom>0.159430559134244</Bottom>
                           </Padding>
                         </Font>
-                        <Text>ARM</Text>
+                        <Text>SP1</Text>
                       </Text>
                       <AdditionalText>
                         <Font>
                           <FontFamily>Franklin Gothic</FontFamily>
                           <FontStyle>Normal</FontStyle>
                           <FontWeight>Normal</FontWeight>
-                          <FontSize>18</FontSize>
+                          <FontSize>14</FontSize>
                           <HorizontalAlignment>Center</HorizontalAlignment>
                           <VerticalAlignment>Bottom</VerticalAlignment>
                           <Padding>
                             <Left>0</Left>
-                            <Top>0</Top>
+                            <Top>0.0531435197114146</Top>
                             <Right>0</Right>
-                            <Bottom>0.2</Bottom>
+                            <Bottom>0.0531435197114146</Bottom>
                           </Padding>
                         </Font>
-                        <Text>SAFE</Text>
+                        <Text>SP2</Text>
                         <OnTextColor>#F034AE00</OnTextColor>
                         <OffTextColor>#2034AE00</OffTextColor>
                       </AdditionalText>
