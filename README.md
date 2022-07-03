@@ -14,7 +14,7 @@ should be no need to manually bind the gauge.
 [Helios Apache Interface - First Look video](https://youtu.be/d1wWuct7lRg)
 
 ### Limited Support
-[discord](https://discord.com/channels/905066835781775360/993080429785645167)
+[discord](https://discord.gg/6u8AAqs7zD)
 ### Images of the Profile
 ![image](https://user-images.githubusercontent.com/18526232/176997930-1a6c6876-cca2-4816-bfd4-bd0cdd48dac3.png)
 ![image](https://user-images.githubusercontent.com/18526232/176997949-ffe35eb5-4bc4-4668-9087-fa6c9f33a24e.png)
