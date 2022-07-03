@@ -23,7 +23,7 @@
 					"Version":	"_ProfileVersionNumber Combined Cockpits",
 					"AspectRatio": "16:9",
 					"NativeResolution": "1920x1080",
-                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits combined into one profile\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits in single profile\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
 						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf","AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
@@ -42,9 +42,29 @@
 					"Version":	"_ProfileVersionNumber",
 					"AspectRatio": "16:9",
 					"NativeResolution": "1920x1080",
-                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\t two profiles, one for each cockpit\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot Cockpit Only\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
-						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf"
+						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf"
+                    ],
+					"VersionsRequired": [
+											{
+												"Product":	"Helios",
+												"Minimum":	"_MinimumReleaseLevel",
+												"Maximum":	null
+											}
+										],
+					"Repository":	"_Repository"
+                },				
+                {
+					"Version":	"_ProfileVersionNumber",
+					"AspectRatio": "16:9",
+					"NativeResolution": "1920x1080",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tCPG Cockpit Only\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+                    "Excludes": [
+						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf"
                     ],
 					"VersionsRequired": [
