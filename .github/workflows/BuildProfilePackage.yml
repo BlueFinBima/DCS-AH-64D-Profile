@@ -81,6 +81,8 @@ jobs:
           echo Substituting prod build info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Text Substitutions ( Dev )
         if: github.ref == 'refs/heads/dev'
         run: |
@@ -91,6 +93,10 @@ jobs:
           echo 'DEV '$smallTag
           sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
+          sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
+          sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
+          sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Rename Directory for development
         if: github.ref == 'refs/heads/dev'     
         run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}
