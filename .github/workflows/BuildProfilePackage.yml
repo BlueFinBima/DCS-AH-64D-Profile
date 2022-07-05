@@ -40,10 +40,13 @@ jobs:
           echo "github.ref = ${{github.ref}}"
           if [ ${{ github.ref }} == "refs/heads/dev" ]; then
             echo "::set-output name=HELIOSBUILDTYPE::Dev"
+            echo "::set-output name=HELIOSDIRECTORYNAME::Dev"
           elif [ ${{ github.ref }} == "refs/heads/test" ]; then
             echo "::set-output name=HELIOSBUILDTYPE::Test"
+            echo "::set-output name=HELIOSDIRECTORYNAME::"
           else
             echo "::set-output name=HELIOSBUILDTYPE::"
+            echo "::set-output name=HELIOSDIRECTORYNAME::"
           fi
       - name: Bump version and push 
         id: bump_tag
@@ -101,13 +104,12 @@ jobs:
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Rename Directory for development
         if: github.ref == 'refs/heads/dev'     
-        run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}
+        run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}
       # create a zip file using the runners shell
-      - name: Package files
-        run: zip -r "output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.hply"
+      - name: Package Files Prod
+        run: zip -r "output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}_V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }}package
-          path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16
-          retention-days: 1
-
+          name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }} package
+          path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}_V${{ steps.bump_tag.outputs.tag }}.helios16
+          retention-days: 2
