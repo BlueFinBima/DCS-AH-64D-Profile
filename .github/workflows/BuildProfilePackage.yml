@@ -8,16 +8,16 @@ name: CreateHelios16
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, master, dev ]
+    branches: [ main, master, dev, test ]
   pull_request:
-    branches: [ main, master, dev ]
+    branches: [ main, master, dev, test ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 env:
   VEHICLE: AH-64D_BLK_II
   VEHICLECOMMONNAME: AH-64D Apache
-  MINHELIOSRELEASE: 1.6.5300.0000
+  MINHELIOSRELEASE: 1.6.5305.0000
   PROFILENAME: Apache
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
