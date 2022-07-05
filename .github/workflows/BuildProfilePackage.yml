@@ -40,6 +40,8 @@ jobs:
           echo "github.ref = ${{github.ref}}"
           if [ ${{ github.ref }} == "refs/heads/dev" ]; then
             echo "::set-output name=HELIOSBUILDTYPE::Dev"
+          elif [ ${{ github.ref }} == "refs/heads/test" ]; then
+            echo "::set-output name=HELIOSBUILDTYPE::Test"
           else
             echo "::set-output name=HELIOSBUILDTYPE::"
           fi
@@ -75,7 +77,7 @@ jobs:
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Pilot.iris
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_CPG.iris
 
-      - name: Text Substitutions ( Prod )
+      - name: Text Substitutions ( Prod / Test)
         if: github.ref != 'refs/heads/dev'     
         run: |
           echo Substituting prod build info in the Profile16.json manifest

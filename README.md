@@ -3,6 +3,8 @@
 
 [Download Current Release](https://github.com/BlueFinBima/DCS-AH-64D-Profile/releases/Latest)
 
+[Read the Wiki](https://github.com/BlueFinBima/DCS-AH-64D-Profile/wiki)
+
 This is a Helios profile for the DCS AH-64D Apache.  It is intended to be used with the
 dedicated Helios interfance shipped with 1.6.5300.x.  As such, it makes use of specific
 panels which are integrated into that release of Helios.
