@@ -17,7 +17,7 @@ on:
 env:
   VEHICLE: AH-64D_BLK_II
   VEHICLECOMMONNAME: AH-64D Apache
-  MINHELIOSRELEASE: 1.6.5305.0000
+  MINHELIOSRELEASE: 1.6.5305.0001
   PROFILENAME: Apache
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -40,10 +40,13 @@ jobs:
           echo "github.ref = ${{github.ref}}"
           if [ ${{ github.ref }} == "refs/heads/dev" ]; then
             echo "::set-output name=HELIOSBUILDTYPE::Dev"
+            echo "::set-output name=HELIOSDIRECTORYNAME::Dev"
           elif [ ${{ github.ref }} == "refs/heads/test" ]; then
             echo "::set-output name=HELIOSBUILDTYPE::Test"
+            echo "::set-output name=HELIOSDIRECTORYNAME::"
           else
             echo "::set-output name=HELIOSBUILDTYPE::"
+            echo "::set-output name=HELIOSDIRECTORYNAME::"
           fi
       - name: Bump version and push 
         id: bump_tag
@@ -59,10 +62,23 @@ jobs:
           echo ${{ env.VEHICLE }} - ${{ env.VEHICLECOMMONNAME }}
           echo "Commit SHA (short) - " ${{ steps.vars.outputs.sha_short }}
           echo "New Release - V " ${{ steps.bump_tag.outputs.tag }}
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install diff-match-patch
+      - name: execute py script to install patches
+        run: |
+          python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
+          sed -i -- 's#Monitor 1#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
       - name: Text Substitutions ( All Branches )
         run: |
           mkdir -p output
           echo Substituting general info in the Profile16.json manifest and the profile
+          sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
           sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
           sed -i -- 's/_ProfileVersionNumber/'"V${{ steps.bump_tag.outputs.tag }}"'/g' Profile16.json
           sed -i -- 's/_Vehicle/'"${{ env.VEHICLE }}"'/g' Profile16.json
@@ -76,6 +92,9 @@ jobs:
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}.iris
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Pilot.iris
           sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_CPG.iris
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Local.iris
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_Pilot_Local.iris
+          sed -i -- 's#<Host>lightning.home</Host>#<Host>localhost</Host>#g' ${fnStub}_CPG_Local.iris
 
       - name: Text Substitutions ( Prod / Test)
         if: github.ref != 'refs/heads/dev'     
@@ -83,6 +102,7 @@ jobs:
           echo Substituting prod build info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Text Substitutions ( Dev )
@@ -95,19 +115,21 @@ jobs:
           echo 'DEV '$smallTag
           sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
+          sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
           sed -i -- 's#_ProfileVersionNumber#DEV '$smallTag'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
           sed -i -- 's#\\Helios\\Iris\\#\\HeliosDev\\Iris\\#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Rename Directory for development
         if: github.ref == 'refs/heads/dev'     
-        run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}
+        run: mv ./${{ env.VEHICLE }}/Helios ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}
       # create a zip file using the runners shell
-      - name: Package files
-        run: zip -r "output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSBUILDTYPE }}/Profiles/*.hply"
+      - name: Package Files Prod
+        run: zip -r "output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}_V${{ steps.bump_tag.outputs.tag }}.helios16" ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/ -x ".git/*" ".github/*" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/Profiles/*.bak" "./${{ env.VEHICLE }}/Helios${{ steps.vars.outputs.HELIOSDIRECTORYNAME }}/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }}package
-          path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}V${{ steps.bump_tag.outputs.tag }}.helios16
+          name: ${{ env.VEHICLECOMMONNAME }} helios16 ${{ steps.vars.outputs.HELIOSBUILDTYPE }} package
+          path: output/${{ env.VEHICLE }} ${{ steps.vars.outputs.HELIOSBUILDTYPE }}_V${{ steps.bump_tag.outputs.tag }}.helios16
           retention-days: 1
 
