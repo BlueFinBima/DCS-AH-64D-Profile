@@ -20,11 +20,12 @@
 			"Message": "Select the required options",
             "Options": [
                 {
-					"Version":	"_ProfileVersionNumber Combined Cockpits",
+					"Version":	"_ProfileVersionNumber Combined Cockpits - Single PC",
 					"AspectRatio": "16:9",
-					"NativeResolution": "1920x1080",
-                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits in one profile\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+					"NativeResolution": "5760x1080",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits in one profile (single PC)\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t5760x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
+						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf"
@@ -39,14 +40,35 @@
 					"Repository":	"_Repository"
                 },
                 {
-					"Version":	"_ProfileVersionNumber Pilot Cockpit",
+					"Version":	"_ProfileVersionNumber Combined Cockpits",
 					"AspectRatio": "16:9",
 					"NativeResolution": "1920x1080",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits in one profile (Remote PC)\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+                    "Excludes": [
+						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Local.hpf"
+                    ],
+					"VersionsRequired": [
+											{
+												"Product":	"Helios",
+												"Minimum":	"_MinimumReleaseLevel",
+												"Maximum":	null
+											}
+										],
+					"Repository":	"_Repository"
+                },
+                {
+					"Version":	"_ProfileVersionNumber Pilot Cockpit",
+					"AspectRatio": "16:9",
+					"NativeResolution": "3840x1080",
                     "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot Cockpit Only\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
 						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf",
-						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf"
+						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Local.hpf"
                     ],
 					"VersionsRequired": [
 											{
@@ -59,12 +81,13 @@
                 {
 					"Version":	"_ProfileVersionNumber CP/G Cockpit",
 					"AspectRatio": "16:9",
-					"NativeResolution": "1920x1080",
+					"NativeResolution": "3840x1080",
                     "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tCPG Cockpit Only\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
 						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
-						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf"
+						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Local.hpf"
                     ],
 					"VersionsRequired": [
 											{
@@ -84,7 +107,8 @@
 						"AH-64D_BLK_II/Helios/Images/*.*",
 						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache_Pilot.hpf",
-						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf"
+						"AH-64D_BLK_II/Helios/Profiles/Apache_CPG.hpf",
+						"AH-64D_BLK_II/Helios/Profiles/Apache_Local.hpf"
                     ],
 					"VersionsRequired": [
 											{

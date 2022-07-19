@@ -82,18 +82,21 @@
               <Location>585,205</Location>
               <Size>750,743</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_TEDAC</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGRIGHT" Name="MFD Right (CP/G)" SnapTarget="True" Locked="False">
               <Location>1335,205</Location>
               <Size>585,550</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_RIGHT_MFCD_CPG</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.CPGLEFT" Name="MFD Left (CP/G)" SnapTarget="True" Locked="False">
               <Location>0,205</Location>
               <Size>585,550</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_LEFT_MFCD_CPG</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU CPG Panel" SnapTarget="True" Locked="False">
@@ -128,6 +131,7 @@
               <Location>1310,0</Location>
               <Size>610,205</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_EUFD_CPG</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel CPG" SnapTarget="True" Locked="False">
@@ -2283,12 +2287,14 @@
               <Location>1010,250</Location>
               <Size>531,500</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_RIGHT_MFCD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.PLTLEFT" Name="MFD Left (Pilot)" SnapTarget="True" Locked="False">
               <Location>379,250</Location>
               <Size>531,500</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_LEFT_MFCD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU Pilot Panel" SnapTarget="True" Locked="False">
@@ -2383,6 +2389,7 @@
               <Location>797,0</Location>
               <Size>732,249</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_EUFD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel Pilot" SnapTarget="True" Locked="False">
@@ -9094,14 +9101,14 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="detent 1.holding" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue == true then return "{RALT}{HOME}" end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&gt;0 then return "{RALT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RALT}{END}" end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="minimum value position.released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{RALT}{HOME}</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="value.changed" />
@@ -9109,14 +9116,14 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="detent 1.holding" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue == true then return "{RSHIFT}{HOME}" end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&gt;0 then return "{RSHIFT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RSHIFT}{END}" end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="minimum value position.released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{RSHIFT}{HOME}</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Left Hand Panel.Lighting Panel.Lights Test Button;Helios.Base.PushButton;Lights Test Button" Name="pushed" />
@@ -11389,14 +11396,14 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="detent 1.holding" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue == true then return "{RALT}{HOME}" end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&gt;0 then return "{RALT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RALT}{END}" end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="minimum value position.released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{RALT}{HOME}</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="value.changed" />
@@ -11404,14 +11411,14 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="detent 1.holding" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue == true then return "{RSHIFT}{HOME}" end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&gt;0 then return "{RSHIFT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RSHIFT}{END}" end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="minimum value position.released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{RSHIFT}{HOME}</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Maximize Left Panel Button;Helios.Base.PushButton;Maximize Left Panel Button" Name="released" />
