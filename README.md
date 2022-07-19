@@ -6,14 +6,24 @@
 [Read the Wiki](https://github.com/BlueFinBima/DCS-AH-64D-Profile/wiki)
 
 This is a Helios profile for the DCS AH-64D Apache.  It is intended to be used with the
-dedicated Helios interfance shipped with 1.6.5300.x.  As such, it makes use of specific
+dedicated Helios interface shipped with 1.6.5300.x.  As such, it makes use of specific
 panels which are integrated into that release of Helios.
  
 The CMWS, EUFDs, KUs MFDs & TEDAC are all modelled as Helios gauges with the ability to
 auto-bind to the AH-64D profile.  This means that if the AH-64D interface is added in the
-Helioos Profile Editor, and one of these gauges is applied from the toolbox, then there
+Helios Profile Editor, and one of these gauges is applied from the toolbox, then there
 should be no need to manually bind the gauge.  
 [Helios Apache Interface - First Look video](https://youtu.be/d1wWuct7lRg)
+
+Several profiles are shipped in this package.  Dual Cockpit profiles for both two PC set-ups and single PC
+set-ups both require the used of Iris Screen Exporter.  If using a 2 PC set-up, there is a remote profile which
+is solely for loading into Profile Editor in order to configure the Viewports on the machine running DCS.
+There are also two single cockpit profiles which are a little simpler to configure. 
+
+### Note
+Due to the nature of this dual cockpit profile, this is not for beginners.  If the profiles are changed or scaled,
+then it is expected that the user is able to make adjustments to Iris configuration in order to make the viewports
+appear in the correct position.
 
 ### Limited Support
 [discord](https://discord.gg/6u8AAqs7zD)
