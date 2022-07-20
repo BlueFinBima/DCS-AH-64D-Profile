@@ -75,7 +75,7 @@ jobs:
           python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#\.iris#_Local\.iris#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
           sed -i -- 's#<EmbeddedViewportName>.*</EmbeddedViewportName>#<EmbeddedViewportName />#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
-          sed -i -- 's#Monitor 2#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
+          sed -i -- 's#Monitor 1#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
       - name: Text Substitutions ( All Branches )
         run: |
           mkdir -p output
