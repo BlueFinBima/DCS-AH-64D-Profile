@@ -5,7 +5,7 @@
 
 [Read the Wiki](https://github.com/BlueFinBima/DCS-AH-64D-Profile/wiki)
 
-This is a Helios profile for the DCS AH-64D Apache.  It is intended to be used with the
+This is a set of Helios profiles for the DCS AH-64D Apache.  They are intended to be used with the
 dedicated Helios interface shipped with 1.6.5300.x.  As such, it makes use of specific
 panels which are integrated into that release of Helios.
  
@@ -18,7 +18,10 @@ should be no need to manually bind the gauge.
 Several profiles are shipped in this package.  Dual Cockpit profiles for both two PC set-ups and single PC
 set-ups both require the used of Iris Screen Exporter.  If using a 2 PC set-up, there is a remote profile which
 is solely for loading into Profile Editor in order to configure the Viewports on the machine running DCS.
-There are also two single cockpit profiles which are a little simpler to configure. 
+There are also two single cockpit profiles which are a little simpler to configure.
+
+If running dual cockpit on a remote system, the Helios Keypress Receiver needs to be running on the machine running
+DCS World. 
 
 ### Note
 Due to the nature of this dual cockpit profile, this is not for beginners.  If the profiles are changed or scaled,
