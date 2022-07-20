@@ -73,7 +73,9 @@ jobs:
       - name: execute py script to install patches
         run: |
           python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
-          sed -i -- 's#Monitor 1#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
+          sed -i -- 's#\.iris#_Local\.iris#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
+          sed -i -- 's#<EmbeddedViewportName>.*</EmbeddedViewportName>#<EmbeddedViewportName />#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
+          sed -i -- 's#Monitor 2#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
       - name: Text Substitutions ( All Branches )
         run: |
           mkdir -p output
@@ -103,8 +105,12 @@ jobs:
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
+          sed -i -- 's#_CockpitType#DUAL#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_CockpitType#DUAL#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
+          sed -i -- 's#_CockpitType#CO-PILOT / GUNNER#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_CPG.hpf'
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
+          sed -i -- 's#_CockpitType#PILOT#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Pilot.hpf'
       - name: Text Substitutions ( Dev )
         if: github.ref == 'refs/heads/dev'
         run: |
