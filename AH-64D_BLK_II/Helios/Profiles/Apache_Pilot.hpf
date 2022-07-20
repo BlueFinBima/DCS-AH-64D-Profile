@@ -532,12 +532,14 @@
               <Location>1010,250</Location>
               <Size>531,500</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_RIGHT_MFCD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.MFD.PLTLEFT" Name="MFD Left (Pilot)" SnapTarget="True" Locked="False">
               <Location>379,250</Location>
               <Size>531,500</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_LEFT_MFCD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Small KU Pilot Panel" SnapTarget="True" Locked="False">
@@ -632,6 +634,7 @@
               <Location>797,0</Location>
               <Size>732,249</Size>
               <Hidden>False</Hidden>
+              <EmbeddedViewportName>AH_64D_EUFD_PLT</EmbeddedViewportName>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Fire Panel Pilot" SnapTarget="True" Locked="False">
@@ -2123,7 +2126,7 @@
                   <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
                   <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
                   <Text>
-                    <Color>#E0063B00</Color>
+                    <Color>#E01FA200</Color>
                     <Font>
                       <FontFamily>Franklin Gothic</FontFamily>
                       <FontStyle>Normal</FontStyle>
@@ -2143,6 +2146,90 @@
                   <Children />
                 </Control>
               </Children>
+            </Control>
+          </Children>
+        </Control>
+        <Control TypeIdentifier="Helios.Panel.Timer" Name="Splash Panel" SnapTarget="True" Locked="False">
+          <Location>660,340</Location>
+          <Size>600,400</Size>
+          <Hidden>False</Hidden>
+          <Background>
+            <Color>#A01E1E1E</Color>
+          </Background>
+          <Border>
+            <TopLeftCorner />
+            <TopBorder>{Helios}/Images/Panels/panel-bottom.png</TopBorder>
+            <TopRightCorner />
+            <RightBorder>{Helios}/Images/Panels/panel-right.png</RightBorder>
+            <BottomRightCorner />
+            <BottomBorder>{Helios}/Images/Panels/panel-bottom.png</BottomBorder>
+            <BottomLeftCorner />
+            <LeftBorder>{Helios}/Images/Panels/panel-right.png</LeftBorder>
+          </Border>
+          <Interaction>
+            <AllowInteractionFull>False</AllowInteractionFull>
+            <AllowInteractionNone>True</AllowInteractionNone>
+            <AllowInteractionLegacy>False</AllowInteractionLegacy>
+          </Interaction>
+          <TimerEnabled>True</TimerEnabled>
+          <TimerInterval>5</TimerInterval>
+          <Children>
+            <Control TypeIdentifier="Helios.Base.Image" Name="BlueFinLogo" SnapTarget="False" Locked="False">
+              <Image>AH-64D_blk_II\BlueFinBima\BlueFinLogo.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <Location>490,10</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
+              <FillBackground>False</FillBackground>
+              <BackgroundColor>#FF1E1E1E</BackgroundColor>
+              <FontColor>#FF12AE08</FontColor>
+              <Font>
+                <FontFamily>Helios Virtual Cockpit A-10C_ALQ_213</FontFamily>
+                <FontStyle>Normal</FontStyle>
+                <FontWeight>Normal</FontWeight>
+                <FontSize>32</FontSize>
+                <HorizontalAlignment>Center</HorizontalAlignment>
+                <VerticalAlignment>Top</VerticalAlignment>
+                <Padding>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Right>0</Right>
+                  <Bottom>0</Bottom>
+                </Padding>
+              </Font>
+              <Text>_CockpitType COCKPIT HELIOS PROFILE _ProfileVersionNumber BY BLUEFINBIMA</Text>
+              <Location>0,160</Location>
+              <Size>600,200</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Text" Name="Title" SnapTarget="True" Locked="False">
+              <FillBackground>False</FillBackground>
+              <BackgroundColor>#FF1E1E1E</BackgroundColor>
+              <FontColor>#FF12AE08</FontColor>
+              <Font>
+                <FontFamily>Helios Virtual Cockpit A-10C_ALQ_213</FontFamily>
+                <FontStyle>Normal</FontStyle>
+                <FontWeight>Normal</FontWeight>
+                <FontSize>40</FontSize>
+                <HorizontalAlignment>Center</HorizontalAlignment>
+                <VerticalAlignment>Top</VerticalAlignment>
+                <Padding>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Right>0</Right>
+                  <Bottom>0</Bottom>
+                </Padding>
+              </Font>
+              <Text>AH-64D APACHE</Text>
+              <Location>0,100</Location>
+              <Size>600,200</Size>
+              <Hidden>False</Hidden>
+              <Children />
             </Control>
           </Children>
         </Control>
@@ -5912,7 +5999,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Pilot Cockpit.Left Console Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&lt;0 then return "{RALT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RALT}{END}" else return end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Pilot Cockpit.Left Console Panel.Power Panel.Left Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Left Power Lever" Name="minimum value position.released" />
@@ -5927,7 +6014,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="detent 1.released" />
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <LuaScript>if TriggerValue&lt;0 then return "{RSHIFT}{END}" end</LuaScript>
+      <LuaScript>if TriggerValue&lt;0 then return "{RSHIFT}{END}" else return end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Pilot Cockpit.Left Console Panel.Power Panel.Right Power Lever;Helios.Base.LinearPotentiometerDetentsAnimated;Right Power Lever" Name="minimum value position.released" />

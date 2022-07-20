@@ -42,7 +42,7 @@
       <Description>This is the Left MFCD for the Co-pilot / Gunner</Description>
       <Host>lightning.home</Host>
       <Port>9093</Port>
-      <ScreenCaptureX>4705</ScreenCaptureX>
+      <ScreenCaptureX>4525</ScreenCaptureX>
       <ScreenCaptureY>550</ScreenCaptureY>
       <SizeX>398</SizeX>
       <SizeY>398</SizeY>
@@ -74,16 +74,28 @@
       <ScreenPositionY>13</ScreenPositionY>
     </ViewPort>
     <ViewPort>
-      <Name>TEDAC</Name>
+      <Name>TEDAC Top</Name>
       <Description>TADS Controller</Description>
       <Host>lightning.home</Host>
       <Port>9096</Port>
       <ScreenCaptureX>5209</ScreenCaptureX>
       <ScreenCaptureY>0</ScreenCaptureY>
       <SizeX>550</SizeX>
-      <SizeY>550</SizeY>
+      <SizeY>200</SizeY>
       <ScreenPositionX>2602</ScreenPositionX>
       <ScreenPositionY>308</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>TEDAC Bottom</Name>
+      <Description>TADS Controller</Description>
+      <Host>lightning.home</Host>
+      <Port>9097</Port>
+      <ScreenCaptureX>5209</ScreenCaptureX>
+      <ScreenCaptureY>200</ScreenCaptureY>
+      <SizeX>550</SizeX>
+      <SizeY>250</SizeY>
+      <ScreenPositionX>2602</ScreenPositionX>
+      <ScreenPositionY>508</ScreenPositionY>
     </ViewPort>
     <ViewPort>
       <Name>Background</Name>

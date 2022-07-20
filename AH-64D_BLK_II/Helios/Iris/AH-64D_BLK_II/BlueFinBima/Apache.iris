@@ -74,16 +74,28 @@
       <ScreenPositionY>13</ScreenPositionY>
     </ViewPort>
     <ViewPort>
-      <Name>TEDAC</Name>
+      <Name>TEDAC Top</Name>
       <Description>TADS Controller</Description>
       <Host>lightning.home</Host>
       <Port>9096</Port>
       <ScreenCaptureX>6900</ScreenCaptureX>
       <ScreenCaptureY>796</ScreenCaptureY>
       <SizeX>550</SizeX>
-      <SizeY>550</SizeY>
+      <SizeY>200</SizeY>
       <ScreenPositionX>682</ScreenPositionX>
       <ScreenPositionY>308</ScreenPositionY>
+    </ViewPort>
+    <ViewPort>
+      <Name>TEDAC Bottom</Name>
+      <Description>TADS Controller</Description>
+      <Host>lightning.home</Host>
+      <Port>9097</Port>
+      <ScreenCaptureX>6900</ScreenCaptureX>
+      <ScreenCaptureY>996</ScreenCaptureY>
+      <SizeX>550</SizeX>
+      <SizeY>250</SizeY>
+      <ScreenPositionX>682</ScreenPositionX>
+      <ScreenPositionY>508</ScreenPositionY>
     </ViewPort>
     <ViewPort>
       <Name>Background</Name>
