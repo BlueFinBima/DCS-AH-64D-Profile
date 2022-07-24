@@ -42,19 +42,26 @@ if CaptureAdjustmentValueX != 0:
         s = el.text
         if int(el.text) >= 1920:
           el.text = str(int(el.text) + CaptureAdjustmentValueX)
-          print("Capture Position ", s, el.text)
+          print("Capture Position X ", s, el.text)
 
 if CaptureAdjustmentValueY != 0:
     for el in root.iter('ScreenCaptureY'):
+        s = el.text
         el.text = str(int(el.text) + CaptureAdjustmentValueY)
+        print("Capture Position Y ", s, el.text)
 
 if PositionAdjustmentValueX != 0:
     for el in root.iter('ScreenPositionX'):
+        s = el.text
         el.text = str(int(el.text) + PositionAdjustmentValueX)
+        print("Screen Position X ", s, el.text)
+
 
 if PositionAdjustmentValueY != 0:
     for el in root.iter('ScreenPositionY'):
+        s = el.text
         el.text = str(int(el.text) + PositionAdjustmentValueY)
+        print("Screen Position Y ", s, el.text)
 
 et.write(IrisConfigFileName,encoding="UTF-8",xml_declaration=True)
 
