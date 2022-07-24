@@ -22,6 +22,10 @@ CaptureAdjustmentValueY = int(sys.argv[5])
 PositionAdjustmentValueX = int(sys.argv[6])
 PositionAdjustmentValueY = int(sys.argv[7])
 
+print("Iris Config File", IrisConfigFileName)
+print("Pilot config ", IrisConfigSubFileName1)
+print("CPG config ", IrisConfigSubFileName2)
+
 from defusedxml.ElementTree import parse
 # parse the original input file
 et = parse(IrisConfigFileName)
