@@ -17,10 +17,10 @@ import sys
 IrisConfigFileName = sys.argv[1]
 IrisConfigSubFileName1 = sys.argv[2]
 IrisConfigSubFileName2 = sys.argv[3]
-CaptureAdjustmentValueX = sys.argv[4]
-CaptureAdjustmentValueY = sys.argv[5]
-PositionAdjustmentValueX = sys.argv[6]
-PositionAdjustmentValueY = sys.argv[7]
+CaptureAdjustmentValueX = int(sys.argv[4])
+CaptureAdjustmentValueY = int(sys.argv[5])
+PositionAdjustmentValueX = int(sys.argv[6])
+PositionAdjustmentValueY = int(sys.argv[7])
 
 from defusedxml.ElementTree import parse
 # parse the original input file
