@@ -1,0 +1,9 @@
+    <Monitor>
+      <Location>0,0</Location>
+      <Size>1920,1080</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children />  
+    </Monitor>
