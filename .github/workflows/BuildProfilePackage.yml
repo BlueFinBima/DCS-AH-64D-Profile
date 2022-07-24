@@ -74,7 +74,7 @@ jobs:
       - name: execute py script to install patches
         run: |
           ls '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/'
-          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Local.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot_Local.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG_Local.iris' 1920 0 -1920 0
+          python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Local.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot_Local.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG_Local.iris' -3840 -1080 -1920 1080
           python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#\.iris#_Local\.iris#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
           sed -i -- 's#<EmbeddedViewportName>.*</EmbeddedViewportName>#<EmbeddedViewportName />#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
