@@ -8,16 +8,19 @@
 # Arguments:
 # 1. Filename for the original Helios Profile file
 # 2. Filename for the monitor XML to be inserted into the profile 
-# 3. Filename of the resultant Helios profile
+# 3. Filename for the Bindings XML to be inserted into the profile 
+# 4. Filename of the resultant Helios profile
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 import sys
 InputHeliosProfile = sys.argv[1]
 hpfMonitorFileName1 = sys.argv[2]
-OutputHeliosProfile = sys.argv[3]
+hpfBindingFileName1 = sys.argv[3]
+OutputHeliosProfile = sys.argv[4]
 
 print("Donor Helios Profile", InputHeliosProfile)
 print("Monitor XML ", hpfMonitorFileName1)
-#print("CPG config ", IrisConfigSubFileName2)
+print("Binding XML ", hpfBindingFileName1)
+print("New Helios Profile ", OutputHeliosProfile)
 
 from defusedxml.ElementTree import parse
 # parse the original input file
@@ -26,6 +29,8 @@ et = parse(InputHeliosProfile)
 root = et.getroot()
 print("Reading additional monitor XML: ",hpfMonitorFileName1)
 monitorsRoot = parse(hpfMonitorFileName1).getroot()
+print("Reading additional binding XML: ",hpfBindingFileName1)
+bindingsRoot = parse(hpfBindingFileName1).getroot()
 
 # Remove embedded viewports from the profile
 for el in root.iter("EmbeddedViewportName"):
@@ -44,6 +49,16 @@ for el in root:
             el.insert(i,mel)
             i += 1
             print("Adding Monitor",i," at ", mel.find("Location").text)
+        continue
+
+# Insert the two additional bindings at the start of the binding list 
+for el in root:
+    if el.tag == "Bindings":
+        i = 0
+        for mel in bindingsRoot:
+            el.insert(i,mel)
+            i += 1
+            print("Adding Binding for ", mel.find("StaticValue").text)
         continue
 
 print("Writing new profile: ",OutputHeliosProfile)

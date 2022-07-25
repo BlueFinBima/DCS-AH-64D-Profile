@@ -1,3 +1,0 @@
-@@ -296,255 +296,8 @@
-  /%3E%0A
--      %3CChildren /%3E  %0A    %3C/Monitor%3E%0A    %3CMonitor%3E%0A      %3CLocation%3E1920,0%3C/Location%3E%0A      %3CSize%3E1920,1080%3C/Size%3E%0A      %3CHidden%3EFalse%3C/Hidden%3E%0A      %3COrientation%3EDMDO_DEFAULT%3C/Orientation%3E%0A      %3CAlwaysOnTop%3ETrue%3C/AlwaysOnTop%3E%0A      %3CBackground /%3E%0A

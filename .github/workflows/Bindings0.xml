@@ -1,0 +1,12 @@
+  <Bindings>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Stopped" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="kill application" />
+      <StaticValue>Iris-Server</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
+      <Action Target="Interface;;HeliosProcessControl.ProcessControlInterface;Process Control" Name="launch application" />
+      <StaticValue>"%ProgramFiles(x86)%\Helios Virtual Cockpit\Iris Screen Exporter\Iris-Server.exe" "%userprofile%\Documents\Helios\Iris\AH-64D_BLK_II\BlueFinBima\Apache_Local.iris"</StaticValue>
+    </Binding>
+  </Bindings>
