@@ -42,7 +42,7 @@
       <Description>This is the Left MFCD for the Co-pilot / Gunner</Description>
       <Host>lightning.home</Host>
       <Port>9093</Port>
-      <ScreenCaptureX>4705</ScreenCaptureX>
+      <ScreenCaptureX>4525</ScreenCaptureX>
       <ScreenCaptureY>550</ScreenCaptureY>
       <SizeX>398</SizeX>
       <SizeY>398</SizeY>
