@@ -81,7 +81,7 @@
       <ScreenCaptureX>5209</ScreenCaptureX>
       <ScreenCaptureY>0</ScreenCaptureY>
       <SizeX>550</SizeX>
-      <SizeY>200</SizeY>
+      <SizeY>300</SizeY>
       <ScreenPositionX>2602</ScreenPositionX>
       <ScreenPositionY>308</ScreenPositionY>
     </ViewPort>
@@ -91,11 +91,11 @@
       <Host>lightning.home</Host>
       <Port>9097</Port>
       <ScreenCaptureX>5209</ScreenCaptureX>
-      <ScreenCaptureY>200</ScreenCaptureY>
+      <ScreenCaptureY>300</ScreenCaptureY>
       <SizeX>550</SizeX>
       <SizeY>250</SizeY>
       <ScreenPositionX>2602</ScreenPositionX>
-      <ScreenPositionY>508</ScreenPositionY>
+      <ScreenPositionY>608</ScreenPositionY>
     </ViewPort>
     <ViewPort>
       <Name>Background</Name>
