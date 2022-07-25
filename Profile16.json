@@ -100,10 +100,10 @@
 					"Repository":	"_Repository"
                 },
                 {
-					"Version":	"_ProfileVersionNumber **Experts Only** Combined Cockpits - Single PC",
+					"Version":	"_ProfileVersionNumber Combined Cockpits - Single PC",
 					"AspectRatio": "16:9",
 					"NativeResolution": "5760x1080",
-                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\tPilot and CP/G cockpits in one profile (single PC) which requires very good knowledge of Helios and Iris to finish the configuration\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t5760x1080\nRelease Date:\t_ReleaseDate",
+                    "Description": "Aicraft:\t\tAH-64D Block II _ProfileVersionNumber\t**Experts Only** Pilot and CP/G cockpits in one profile (single PC)\nRequirements:\tHelios _MinimumReleaseLevel or above and a very good understanding of Helios and Iris to complete the configuration\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t5760x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
 						"AH-64D_BLK_II/Helios/Profiles/Apache.hpf",
 						"AH-64D_BLK_II/Helios/Profiles/Apache Remote Viewports.hpf",

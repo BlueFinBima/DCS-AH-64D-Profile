@@ -56,7 +56,6 @@ if PositionAdjustmentValueX != 0:
         el.text = str(int(el.text) + PositionAdjustmentValueX)
         print("Screen Position X ", s, el.text)
 
-
 if PositionAdjustmentValueY != 0:
     for el in root.iter('ScreenPositionY'):
         s = el.text

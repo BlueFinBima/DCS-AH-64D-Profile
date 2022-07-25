@@ -71,15 +71,19 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install diff-match-patch
           python -m pip install defusedxml
-      - name: execute py script to install patches
+      - name: execute python scripts to create Iris Configurations and adjust the profile
         run: |
+          echo "Iris Directory Listing"
           ls '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/'
+          echo "Create Iris configurations for Pilot and Co-Pilot (Remote version)"
           python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG.iris' 0 0 0 0
+          echo "Create Iris configurations for Pilot and Co-Pilot and adjust the screen locations (Local version)"
           python .github/workflows/AdjustLocalIrisConfig.py '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Local.iris' '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_Pilot_Local.iris'  '${{ env.VEHICLE }}/Helios/Iris/${{ env.VEHICLE }}/BlueFinBima/${{ env.PROFILENAME }}_CPG_Local.iris' -1920 0 1920 0
-          python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
+          echo "Create Local version of the dual cockpit Apache Profile with adjusted monitors"
+          python .github/workflows/AdjustLocalProfileMonitors.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '.github/workflows/Monitor0.xml' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
+          # python .github/workflows/apply_patch.py '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' ".github/workflows/${{ env.PROFILENAME }}.hpf.gpatch" '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'
           sed -i -- 's#\.iris#_Local\.iris#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
-          sed -i -- 's#<EmbeddedViewportName>.*</EmbeddedViewportName>#<EmbeddedViewportName />#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
-          sed -i -- 's#Monitor 1#Monitor 2#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
+          sed -i -- 's#Monitor 1#Monitor 3#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_Local.hpf'            
       - name: Text Substitutions ( All Branches )
         run: |
           mkdir -p output
