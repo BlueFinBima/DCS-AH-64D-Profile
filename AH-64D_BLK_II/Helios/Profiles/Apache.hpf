@@ -1745,6 +1745,53 @@
                 </Control>
               </Children>
             </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="Master Zeroize Panel" SnapTarget="True" Locked="False">
+              <Location>1356,791</Location>
+              <Size>123,195</Size>
+              <Hidden>False</Hidden>
+              <Background>
+                <Image>AH-64D_BLK_II\BlueFinBima\Zeroize_Base.png</Image>
+                <ImageAlignment>Stretched</ImageAlignment>
+              </Background>
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>True</AllowInteractionNone>
+                <AllowInteractionLegacy>False</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Master Zeroize Toggle" SnapTarget="True" Locked="False">
+                  <Location>42,95</Location>
+                  <Size>41,80</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
+                  <PositionTwoImage>{Helios}/Images/Toggles/orange-round-down.png</PositionTwoImage>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.GuardedSwitch" Name="Master Zeroize Guard" SnapTarget="True" Locked="False">
+                  <Location>38,33</Location>
+                  <Size>48,145</Size>
+                  <Hidden>False</Hidden>
+                  <SwitchType>OnOn</SwitchType>
+                  <Orientation>Vertical</Orientation>
+                  <ClickType>Swipe</ClickType>
+                  <GuardUp>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Down.png</PositionTwoImage>
+                  </GuardUp>
+                  <GuardDown>
+                    <PositionOneImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Up.png</PositionOneImage>
+                    <PositionTwoImage>AH-64D_BLK_II\BlueFinBima\Zeroize_Cover_Down.png</PositionTwoImage>
+                  </GuardDown>
+                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultGuardPosition>Down</DefaultGuardPosition>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Pilot Cockpit" SnapTarget="True" Locked="False">
@@ -2383,6 +2430,19 @@
               <Location>1528,0</Location>
               <Size>392,249</Size>
               <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="CMWS Selector Knob" SnapTarget="True" Locked="False">
+              <Location>1566,26</Location>
+              <Size>64,64</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Selector_Knob_1.png</KnobImage>
+              <Positions>
+                <Position Name="0" Rotation="59.7638957206099" />
+                <Position Name="1" Rotation="90" />
+                <Position Name="2" Rotation="123.954746679783" />
+              </Positions>
+              <DefaultPosition>1</DefaultPosition>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.AH64D.EUFD.PILOT" Name="Up Front Display (Pilot)" SnapTarget="True" Locked="False">
@@ -6920,6 +6980,21 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Power Switch.changed" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.CMWS Selector Knob;Helios.Base.RotarySwitch;CMWS Selector Knob" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (CP/G).Master Zeroize Switch Cover.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (CP/G).Master Zeroize Switch.changed" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.CPG Cockpit.Control Center Button;Helios.Base.PushButton;Control Center Button" Name="pushed" />
       <Action Target="Interface;;Helios.Base.ProfileInterface;Profile" Name="show control center" />
       <StaticValue />
@@ -9250,6 +9325,26 @@
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (CP/G).set.Master Zeroize Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="guard.up" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="guard.down" />
+      <Action Target="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Toggle;Helios.Base.ToggleSwitch;Master Zeroize Toggle" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="guard position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (CP/G).set.Master Zeroize Switch Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Armament Panel Pilot.Pilot Master Arm Switch;Helios.Base.DualIndicatorPushButton;Pilot Master Arm Switch" Name="pushed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Armament Panel (Pilot).push.Master Arm" />
       <StaticValue />
@@ -10612,6 +10707,11 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.guard position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Jettison Switch Cover" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CMWS Selector Knob;Helios.Base.RotarySwitch;CMWS Selector Knob" Name="position.changed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Power Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
