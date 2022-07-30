@@ -17,7 +17,7 @@ on:
 env:
   VEHICLE: AH-64D_BLK_II
   VEHICLECOMMONNAME: AH-64D Apache
-  MINHELIOSRELEASE: 1.6.5305.0001
+  MINHELIOSRELEASE: 1.6.5306.0000
   PROFILENAME: Apache
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel

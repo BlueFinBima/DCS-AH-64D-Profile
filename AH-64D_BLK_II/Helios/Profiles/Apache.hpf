@@ -2432,19 +2432,6 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="CMWS Selector Knob" SnapTarget="True" Locked="False">
-              <Location>1566,26</Location>
-              <Size>64,64</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>AH-64D_blk_II\BlueFinBima\Common\Selector_Knob_1.png</KnobImage>
-              <Positions>
-                <Position Name="0" Rotation="59.7638957206099" />
-                <Position Name="1" Rotation="90" />
-                <Position Name="2" Rotation="123.954746679783" />
-              </Positions>
-              <DefaultPosition>1</DefaultPosition>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.AH64D.EUFD.PILOT" Name="Up Front Display (Pilot)" SnapTarget="True" Locked="False">
               <Location>797,0</Location>
               <Size>732,249</Size>
@@ -6980,11 +6967,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.Power Switch.changed" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.CMWS Selector Knob;Helios.Base.RotarySwitch;CMWS Selector Knob" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="Emergency Panel (CP/G).Master Zeroize Switch Cover.changed" />
       <Action Target="Visual;Monitor 1.CPG Cockpit.Master Zeroize Panel.Master Zeroize Guard;Helios.Base.GuardedSwitch;Master Zeroize Guard" Name="set.guard position" />
       <TriggerValue />
@@ -10707,11 +10689,6 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CMWS Display.CMWS Display_Flare Jettison;Helios.Base.GuardedToggleSwitch;CMWS Display_Flare Jettison" Name="CMWS Display_Flare Jettison.guard position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Jettison Switch Cover" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.CMWS Selector Knob;Helios.Base.RotarySwitch;CMWS Selector Knob" Name="position.changed" />
-      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="CMWS.set.Power Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
