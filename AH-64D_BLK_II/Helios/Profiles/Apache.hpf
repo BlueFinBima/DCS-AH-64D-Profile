@@ -3100,6 +3100,146 @@
                 </Control>
               </Children>
             </Control>
+            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Trim Reset Push Button" SnapTarget="True" Locked="False">
+              <Location>16,0</Location>
+              <Size>80,80</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Buttons/backlit.png</Image>
+              <NormalColor>#FFA8A8A8</NormalColor>
+              <PushedColor>#FFFFFFFF</PushedColor>
+              <BacklitColorScale>0.9</BacklitColorScale>
+              <Text>
+                <Color>#FFDEDEDE</Color>
+                <Font>
+                  <FontFamily>MS 33558</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>15</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0.0406771781660404</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>RESET TRIM</Text>
+              </Text>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="George Panel" SnapTarget="True" Locked="False">
+              <Location>281,844</Location>
+              <Size>225,225</Size>
+              <Hidden>True</Hidden>
+              <Background />
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>True</AllowInteractionNone>
+                <AllowInteractionLegacy>False</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="George S Button" SnapTarget="True" Locked="False">
+                  <Location>75,150</Location>
+                  <Size>75,75</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
+                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="George W Button" SnapTarget="True" Locked="False">
+                  <Location>75,0</Location>
+                  <Size>75,75</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
+                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="George A Button" SnapTarget="True" Locked="False">
+                  <Location>0,75</Location>
+                  <Size>75,75</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
+                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="George D Button" SnapTarget="True" Locked="False">
+                  <Location>150,75</Location>
+                  <Size>75,75</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
+                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.Text" Name="Label" SnapTarget="True" Locked="False">
+                  <FillBackground>False</FillBackground>
+                  <BackgroundColor>#FF1E1E1E</BackgroundColor>
+                  <FontColor>#FF1DC800</FontColor>
+                  <Font>
+                    <FontFamily>MS 33558</FontFamily>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Normal</FontWeight>
+                    <FontSize>11</FontSize>
+                    <HorizontalAlignment>Center</HorizontalAlignment>
+                    <VerticalAlignment>Center</VerticalAlignment>
+                    <Padding>
+                      <Left>0</Left>
+                      <Top>0</Top>
+                      <Right>0</Right>
+                      <Bottom>0</Bottom>
+                    </Padding>
+                  </Font>
+                  <Text>GEORGE COMMANDS</Text>
+                  <ScalingMode>Height</ScalingMode>
+                  <Location>75,75</Location>
+                  <Size>75,75</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="George Panel Unhide Switch" SnapTarget="True" Locked="False">
+              <Location>60,87</Location>
+              <Size>50,100</Size>
+              <Hidden>False</Hidden>
+              <SwitchType>OnOn</SwitchType>
+              <Orientation>Vertical</Orientation>
+              <ClickType>Swipe</ClickType>
+              <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
+              <PositionTwoImage>{Helios}/Images/Toggles/orange-round-down.png</PositionTwoImage>
+              <DefaultPosition>One</DefaultPosition>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Text" Name="Talk To George Legend" SnapTarget="True" Locked="False">
+              <FillBackground>False</FillBackground>
+              <BackgroundColor>#FF1E1E1E</BackgroundColor>
+              <FontColor>#FFCCCCCC</FontColor>
+              <Font>
+                <FontFamily>MS 33558</FontFamily>
+                <FontStyle>Normal</FontStyle>
+                <FontWeight>Normal</FontWeight>
+                <FontSize>12</FontSize>
+                <HorizontalAlignment>Right</HorizontalAlignment>
+                <VerticalAlignment>Center</VerticalAlignment>
+                <Padding>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Right>0</Right>
+                  <Bottom>0</Bottom>
+                </Padding>
+              </Font>
+              <Text>TALK TO GEORGE</Text>
+              <ScalingMode>Height</ScalingMode>
+              <Location>0,107</Location>
+              <Size>60,60</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
             <Control TypeIdentifier="Helios.Panel" Name="Left Console Panel" SnapTarget="True" Locked="False">
               <Location>0,6</Location>
               <Size>337,1068</Size>
@@ -4136,146 +4276,6 @@
                   <Children />
                 </Control>
               </Children>
-            </Control>
-            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Trim Reset Push Button" SnapTarget="True" Locked="False">
-              <Location>16,0</Location>
-              <Size>80,80</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image>{Helios}/Images/Buttons/backlit.png</Image>
-              <NormalColor>#FFA8A8A8</NormalColor>
-              <PushedColor>#FFFFFFFF</PushedColor>
-              <BacklitColorScale>0.9</BacklitColorScale>
-              <Text>
-                <Color>#FFDEDEDE</Color>
-                <Font>
-                  <FontFamily>MS 33558</FontFamily>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <FontSize>15</FontSize>
-                  <HorizontalAlignment>Center</HorizontalAlignment>
-                  <VerticalAlignment>Center</VerticalAlignment>
-                  <Padding>
-                    <Left>0.0406771781660404</Left>
-                    <Top>0</Top>
-                    <Right>0</Right>
-                    <Bottom>0</Bottom>
-                  </Padding>
-                </Font>
-                <Text>RESET TRIM</Text>
-              </Text>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Panel" Name="George Panel" SnapTarget="True" Locked="False">
-              <Location>281,844</Location>
-              <Size>225,225</Size>
-              <Hidden>True</Hidden>
-              <Background />
-              <Interaction>
-                <AllowInteractionFull>False</AllowInteractionFull>
-                <AllowInteractionNone>True</AllowInteractionNone>
-                <AllowInteractionLegacy>False</AllowInteractionLegacy>
-              </Interaction>
-              <Children>
-                <Control TypeIdentifier="Helios.Base.PushButton" Name="George S Button" SnapTarget="True" Locked="False">
-                  <Location>75,150</Location>
-                  <Size>75,75</Size>
-                  <Hidden>False</Hidden>
-                  <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
-                  <Children />
-                </Control>
-                <Control TypeIdentifier="Helios.Base.PushButton" Name="George W Button" SnapTarget="True" Locked="False">
-                  <Location>75,0</Location>
-                  <Size>75,75</Size>
-                  <Hidden>False</Hidden>
-                  <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
-                  <Children />
-                </Control>
-                <Control TypeIdentifier="Helios.Base.PushButton" Name="George A Button" SnapTarget="True" Locked="False">
-                  <Location>0,75</Location>
-                  <Size>75,75</Size>
-                  <Hidden>False</Hidden>
-                  <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
-                  <Children />
-                </Control>
-                <Control TypeIdentifier="Helios.Base.PushButton" Name="George D Button" SnapTarget="True" Locked="False">
-                  <Location>150,75</Location>
-                  <Size>75,75</Size>
-                  <Hidden>False</Hidden>
-                  <Type>Momentary</Type>
-                  <Image>{Helios}/Images/Buttons/tactile-dark-round.png</Image>
-                  <PushedImage>{Helios}/Images/Buttons/tactile-dark-round-in.png</PushedImage>
-                  <Children />
-                </Control>
-                <Control TypeIdentifier="Helios.Base.Text" Name="Label" SnapTarget="True" Locked="False">
-                  <FillBackground>False</FillBackground>
-                  <BackgroundColor>#FF1E1E1E</BackgroundColor>
-                  <FontColor>#FF1DC800</FontColor>
-                  <Font>
-                    <FontFamily>MS 33558</FontFamily>
-                    <FontStyle>Normal</FontStyle>
-                    <FontWeight>Normal</FontWeight>
-                    <FontSize>11</FontSize>
-                    <HorizontalAlignment>Center</HorizontalAlignment>
-                    <VerticalAlignment>Center</VerticalAlignment>
-                    <Padding>
-                      <Left>0</Left>
-                      <Top>0</Top>
-                      <Right>0</Right>
-                      <Bottom>0</Bottom>
-                    </Padding>
-                  </Font>
-                  <Text>GEORGE COMMANDS</Text>
-                  <ScalingMode>Height</ScalingMode>
-                  <Location>75,75</Location>
-                  <Size>75,75</Size>
-                  <Hidden>False</Hidden>
-                  <Children />
-                </Control>
-              </Children>
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="George Panel Unhide Switch" SnapTarget="True" Locked="False">
-              <Location>60,87</Location>
-              <Size>50,100</Size>
-              <Hidden>False</Hidden>
-              <SwitchType>OnOn</SwitchType>
-              <Orientation>Vertical</Orientation>
-              <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/Toggles/orange-round-up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/Toggles/orange-round-down.png</PositionTwoImage>
-              <DefaultPosition>One</DefaultPosition>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.Text" Name="Talk To George Legend" SnapTarget="True" Locked="False">
-              <FillBackground>False</FillBackground>
-              <BackgroundColor>#FF1E1E1E</BackgroundColor>
-              <FontColor>#FFCCCCCC</FontColor>
-              <Font>
-                <FontFamily>MS 33558</FontFamily>
-                <FontStyle>Normal</FontStyle>
-                <FontWeight>Normal</FontWeight>
-                <FontSize>12</FontSize>
-                <HorizontalAlignment>Right</HorizontalAlignment>
-                <VerticalAlignment>Center</VerticalAlignment>
-                <Padding>
-                  <Left>0</Left>
-                  <Top>0</Top>
-                  <Right>0</Right>
-                  <Bottom>0</Bottom>
-                </Padding>
-              </Font>
-              <Text>TALK TO GEORGE</Text>
-              <ScalingMode>Height</ScalingMode>
-              <Location>0,107</Location>
-              <Size>60,60</Size>
-              <Hidden>False</Hidden>
-              <Children />
             </Control>
           </Children>
         </Control>
@@ -11750,6 +11750,71 @@
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Trim Reset Push Button;Helios.Base.BacklitPushButton;Trim Reset Push Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{LCONTROL}t</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George S Button;Helios.Base.PushButton;George S Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
+      <StaticValue>s</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George S Button;Helios.Base.PushButton;George S Button" Name="released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
+      <StaticValue>s</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George W Button;Helios.Base.PushButton;George W Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
+      <StaticValue>w</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George W Button;Helios.Base.PushButton;George W Button" Name="released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
+      <StaticValue>w</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George A Button;Helios.Base.PushButton;George A Button" Name="released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
+      <StaticValue>a</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George A Button;Helios.Base.PushButton;George A Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
+      <StaticValue>a</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George D Button;Helios.Base.PushButton;George D Button" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
+      <StaticValue>d</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George D Button;Helios.Base.PushButton;George D Button" Name="released" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
+      <StaticValue>d</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position one.entered" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel;Helios.Panel;George Panel" Name="set.hidden" />
+      <StaticValue>True</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position two.entered" />
+      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel;Helios.Panel;George Panel" Name="set.hidden" />
+      <StaticValue>False</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position one.entered" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{LCONTROL}v</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position two.entered" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>{LCONTROL}v</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Left Console Panel.Lighting Panel.Navigation Lights Toggle;Helios.Base.ThreeWayToggleSwitch;Navigation Lights Toggle" Name="position.changed" />
       <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="External Lights.set.Navigation Lights Switch" />
       <TriggerValue />
@@ -12103,71 +12168,6 @@
       <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Comms Panel.Minimize Button;Helios.Base.PushButton;Minimize Button" Name="released" />
       <Action Target="Visual;Monitor 1.Pilot Cockpit.Maximize Comms Panel Button;Helios.Base.PushButton;Maximize Comms Panel Button" Name="set.hidden" />
       <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.Trim Reset Push Button;Helios.Base.BacklitPushButton;Trim Reset Push Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>{LCONTROL}t</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George S Button;Helios.Base.PushButton;George S Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
-      <StaticValue>s</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George S Button;Helios.Base.PushButton;George S Button" Name="released" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
-      <StaticValue>s</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George W Button;Helios.Base.PushButton;George W Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
-      <StaticValue>w</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George W Button;Helios.Base.PushButton;George W Button" Name="released" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
-      <StaticValue>w</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George A Button;Helios.Base.PushButton;George A Button" Name="released" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
-      <StaticValue>a</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George A Button;Helios.Base.PushButton;George A Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
-      <StaticValue>a</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George D Button;Helios.Base.PushButton;George D Button" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="press key" />
-      <StaticValue>d</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel.George D Button;Helios.Base.PushButton;George D Button" Name="released" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="release key" />
-      <StaticValue>d</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position one.entered" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel;Helios.Panel;George Panel" Name="set.hidden" />
-      <StaticValue>True</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position two.entered" />
-      <Action Target="Visual;Monitor 1.Pilot Cockpit.George Panel;Helios.Panel;George Panel" Name="set.hidden" />
-      <StaticValue>False</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position one.entered" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>{LCONTROL}v</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.Pilot Cockpit.George Panel Unhide Switch;Helios.Base.ToggleSwitch;George Panel Unhide Switch" Name="position two.entered" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>{LCONTROL}v</StaticValue>
     </Binding>
   </Bindings>
 </HeliosProfile>
